@@ -379,53 +379,7 @@ iframe {
     }
 }
 
-/*************** CONTACT FORM ***************/
-
-.contact-header {
-    width: 100%;
-    padding-top: 10px;
-    font-size: 2em;
-}
-
-.contact-form {
-    width: 100%;
-}
-
-form * {
-    width: 600px;
-    display: grid;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-@media screen and (max-width: 1240px) {
-    form * {
-        width: 100%
-    }
-}
-
-label {
-    margin-left: -15px;
-    font-size: 1.2em;
-    color: #FCFBFE;
-}
-
-input {
-    margin-bottom: 15px;
-    border: none;
-    font-family: "Be Vietnam Pro", sans-serif;
-    font-size: 1.2em;
-}
-
-textarea {
-    border: none;
-    font-family: "Be Vietnam Pro", sans-serif;
-    font-size: 1.2em;
-}
-
-#message {
-    height: 200px;
-}
+/*************** BUTTON ***************/
 
 button {
     margin: 40px 0px;
