@@ -26,7 +26,7 @@ section {
 /*************** FONT STYLES ***************/
 
 h1 {
-    font-size: 5em;
+    font-size: 4em;
 }
 
 @media screen and (max-width: 960px) {
@@ -64,7 +64,7 @@ a {
 /*************** HERO SECTION (ALL PAGES) ***************/
 
 .hero {
-    height: 100vh;
+    height: 75vh;
     background-image: linear-gradient(rgba(14, 0, 47, 0.8), rgba(14,0,47,0.5)), url("./assets/hero-background.jpg");
     background-size: cover;
     background-position: center;
@@ -303,6 +303,7 @@ iframe {
 /*************** ABOUT ME ***************/
 
 #about {
+    padding-top: 150px;
     padding-bottom: 0;
 }
 
