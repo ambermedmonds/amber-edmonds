@@ -14,62 +14,99 @@
 <body>
 
     <header>
-        <section class="hero">
-                <div class="top-nav">
-                    <a class="logo" href="index.html">Amber Edmonds</a>
-                    <nav class="nav-bar">
-                        <a href="index.html">Projects</a>
-                        <a href="about.html">About</a>
-                    </nav>
-                </div>
-        
-
-            <div class="hero-contents">
-                <h1>TWN Instagram</h1>
-                <table>
-                    <tbody>
-                        <tr>
-                            <th class="header">Context</th>
-                            <td>VP of Marketing for The Women's Network</td>
-                        </tr>
-                        <tr>
-                            <th class="header">Timeline</th>
-                            <td>Jan 2024 - May 2025</td>
-                        </tr>
-                        <tr>
-                            <th class="header">Skills</th>
-                            <td>Graphic Design</td>
-                        </tr>
-                        <tr>
-                            <th class="header">Software</th>
-                            <td>Canva</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="top-nav">
+            <a class="top-nav-center" href="index.html">Amber Edmonds</a>
+            <div class="top-nav-menu">
+                <nav class="top-nav-left">
+                    <a class="selected" href="index.html">Portfolio</a>
+                    <a href="about.html">About</a>
+                    <a href="file:///Users/amberedmonds/Downloads/2_Career/Career%20Prep/Resume/Amber%20Edmonds%20Resume.pdf">Resume</a>
+                </nav>
             </div>
-        </section>
-    </header>
-
-    <main>
-        <section>
-            <div class="contents">
-                <img class="cover-img" src="assets/TWN-mockup.png" alt="Collection of Instagram-style promotional posts for a university club featuring green and pink designs, highlighting events, applications, meetings, and a career panel">
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="contents">
-            <nav id="social-nav">
-                <a href="https://www.linkedin.com/in/ambermedmonds/" target="_blank">
+            <nav class="top-nav-right" aria-label="Social links">
+                <a href="https://www.linkedin.com/in/ambermedmonds/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
-                <a href="mailto:a.m.edmonds@wustl.edu" target="_blank">
+                <a href="mailto:a.m.edmonds@wustl.edu" aria-label="Email">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                </a> 
+                </a>
             </nav>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </footer>
+    </header>
+
+    <main class="project-case-study">
+        <div class="project-case-wrap">
+            <aside class="project-case-left">
+                <p class="project-case-kicker">Social Media</p>
+                <h1>TWN Instagram</h1>
+                <p class="project-case-intro">As VP of Marketing for The Women's Network, I designed social content that promoted chapter events, member applications, and community programming.</p>
+
+                <div class="project-meta-grid">
+                    <article>
+                        <h3>When</h3>
+                        <p>Jan 2024-May 2025</p>
+                    </article>
+                    <article>
+                        <h3>Role</h3>
+                        <p>VP of Marketing</p>
+                    </article>
+                    <article>
+                        <h3>Tools</h3>
+                        <p>Canva</p>
+                    </article>
+                </div>
+
+                <div class="project-accordion-group">
+                    <details class="project-accordion">
+                        <summary>Context</summary>
+                        <div class="project-accordion-content">
+                            <p>Created and managed weekly social media graphics for a student organization focused on mentorship and career development programming.</p>
+                        </div>
+                    </details>
+
+                    <details class="project-accordion">
+                        <summary>Content Types</summary>
+                        <div class="project-accordion-content">
+                            <ul>
+                                <li>Event promos and save-the-dates</li>
+                                <li>Applications and member recruitment posts</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="project-accordion">
+                        <summary>Design Focus</summary>
+                        <div class="project-accordion-content">
+                            <ul>
+                                <li>Consistent typography and color language</li>
+                                <li>Clear CTA hierarchy for student audiences</li>
+                                <li>Templates enabling faster weekly output</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="project-accordion">
+                        <summary>Outcome</summary>
+                        <div class="project-accordion-content">
+                            <p>Built a cohesive social presence that improved program discoverability and visual consistency across chapter communications.</p>
+                        </div>
+                    </details>
+                </div>
+            </aside>
+
+            <section class="project-case-right" aria-label="The Women's Network visuals">
+                <figure class="project-visual-card">
+                    <img src="assets/TWN-cover.png" alt="Collection of Instagram-style promotional posts for a university club featuring green and pink designs, highlighting events, applications, meetings, and a career panel">
+                    <figcaption>Social Media Posts</figcaption>
+                </figure>
+            </section>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 
