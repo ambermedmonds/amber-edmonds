@@ -47,6 +47,22 @@ section {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 1100px) {
+    .contents {
+        width: min(90%, 1240px);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    section {
+        padding: 40px 0;
+    }
+
+    .contents {
+        width: min(92%, 1240px);
+    }
+}
+
 /*************** FONT STYLES ***************/
 
 h1 {
@@ -151,7 +167,7 @@ h3 {
     font-weight: 500;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
     .home-hero {
         min-height: 66vh;
         padding: calc(var(--nav-height) + 56px) 0 60px;
@@ -288,7 +304,7 @@ h3 {
     color: var(--gray-light-1);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
     :root {
         --nav-height: 74px;
         --nav-side-padding: 20px;
@@ -391,6 +407,13 @@ body.about-page {
     background-size: cover;
 }
 
+@media (hover: none), screen and (max-width: 1200px) {
+    body.home-page,
+    body.about-page {
+        background-attachment: scroll;
+    }
+}
+
 .home-projects {
     padding: 8px 0 72px;
     background-color: transparent;
@@ -446,7 +469,7 @@ body.about-page {
 
 .card-img {
     width: 100%;
-    height: 52vh;
+    height: clamp(220px, 34vw, 460px);
     margin-top: 0;
     display: block;            
     object-fit: cover;
@@ -464,19 +487,13 @@ body.about-page {
 
 @media screen and (max-width: 1240px) {
     .card-img {
-        height: 68vh;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .card-img {
-        height: 60vh;
+        height: clamp(250px, 58vw, 560px);
     }
 }
 
 @media screen and (max-width: 700px) {
     .card-img {
-        height: 56vh;
+        height: clamp(220px, 62vw, 340px);
     }
 }
 
@@ -590,13 +607,15 @@ body.about-page {
 
 .cover-img {
     width: 100%;
-    height: 94vh;
+    height: clamp(320px, 80vh, 940px);
     object-fit: cover;
     margin-top: 30px;
     border-radius: 10px;
 }
 
 table {
+    width: 100%;
+    border-collapse: collapse;
     font-size: 1.3em;
 }
 
@@ -623,7 +642,7 @@ video {
 
 iframe {
     width: 100%;
-    height: 600px;
+    height: clamp(280px, 72vh, 600px);
     border-radius: 10px;
 }
 
@@ -870,13 +889,17 @@ iframe {
     }
 
     .project-case-right {
-        min-height: 60vh;
+        min-height: 52vh;
     }
 }
 
 @media screen and (max-width: 700px) {
     .project-case-left {
         padding: 28px 20px;
+    }
+
+    .project-case-left h1 {
+        font-size: clamp(2rem, 11vw, 2.8rem);
     }
 
     .project-case-intro {
@@ -886,6 +909,20 @@ iframe {
     .project-meta-grid {
         grid-template-columns: 1fr;
         gap: 12px;
+    }
+
+    .project-case-right {
+        min-height: 44vh;
+        gap: 10px;
+    }
+
+    table {
+        font-size: 1rem;
+    }
+
+    th,
+    td {
+      padding: 5px 12px 5px 0px;
     }
 }
 
@@ -943,9 +980,10 @@ iframe {
     gap: 50px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 920px) {
     #about .two-cols {
         flex-direction: column;
+        gap: 20px;
     }
 }
 
@@ -953,11 +991,12 @@ iframe {
     width: 30%;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 920px) {
     #about .first {
         width: 100%;
-        height: 60vh;
-        align-self: center;
+        max-width: none;
+        height: clamp(240px, 52vw, 360px);
+        align-self: stretch;
     }
 }
 
@@ -965,16 +1004,19 @@ iframe {
     width: 70%;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 920px) {
     #about .second {
         width: 100%;
     }
 }
 
 .headshot {
+    width: 100%;
     height: 100%;
+    display: block;
     margin: 0;
     object-fit: cover;
+    object-position: center top;
 }
 
 #background .two-cols {
@@ -983,10 +1025,20 @@ iframe {
     gap: 50px;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 1101px) {
+    #background .contents > .two-cols + .two-cols {
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
     #background .two-cols {
         flex-direction: column;
-        gap: 0px;
+        gap: 24px;
+    }
+
+    #background .contents > .two-cols + .two-cols {
+        margin-top: 24px;
     }
 }
 
@@ -994,7 +1046,7 @@ iframe {
     width: 50%;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1100px) {
     #background .first {
         width: 100%;
     }
@@ -1004,7 +1056,7 @@ iframe {
     width: 50%;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1100px) {
     #background .second {
         width: 100%;
     }
