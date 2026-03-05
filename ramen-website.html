@@ -14,127 +14,104 @@
 <body>
 
     <header>
-        <section class="hero">
-                <div class="top-nav">
-                    <a class="logo" href="index.html">Amber Edmonds</a>
-                    <nav class="nav-bar">
-                        <a href="index.html">Projects</a>
-                        <a href="about.html">About</a>
-                    </nav>
-                </div>
-
-            <div class="hero-contents">
-                <h1>Ramen Website</h1>
-                <table>
-                    <tbody>
-                        <tr>
-                            <th class="header">Context</th>
-                            <td>ART 337I: Communication Design - Interaction Foundations</td>
-                        </tr>
-                        <tr>
-                            <th class="header">Timeline</th>
-                            <td>8 Weeks (Oct 2024 - Nov 2024)</td>
-                        </tr>
-                        <tr>
-                            <th class="header">Skills</th>
-                            <td>Prototyping · Interaction Design · Responsive Web Design</td>
-                        </tr>
-                        <tr>
-                            <th class="header">Software</th>
-                            <td>Figma · HTML/CSS</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="top-nav">
+            <a class="top-nav-center" href="index.html">Amber Edmonds</a>
+            <div class="top-nav-menu">
+                <nav class="top-nav-left">
+                    <a class="selected" href="index.html">Portfolio</a>
+                    <a href="about.html">About</a>
+                    <a href="file:///Users/amberedmonds/Downloads/2_Career/Career%20Prep/Resume/Amber%20Edmonds%20Resume.pdf">Resume</a>
+                </nav>
             </div>
-        </section>
-    </header>
-
-    <main>
-        <section>
-            <div class="contents">
-                <a href="https://ambermedmonds.github.io/iffall2024/microsite/final/index.html" target="blank">
-                    <img class="cover-img" src="assets/ramen-cover.png" alt="Instant noodles website mockup featuring a hero section and educational content about the history of instant noodles">
-                </a>
-
-                <br><br>
-
-                <div class="two-cols">
-                    <div class="first">
-                        <h2 class="header">Background</h2>
-                    </div>
-                    <div class="second">
-                        <p>In my Interaction Foundations course, I partnered with a classmate in a creative director-designer workflow to build a responsive website from scratch using HTML and CSS in Visual Studio Code. As the designer, I translated the initial concept into a cohesive visual system and a scrollable narrative about instant noodles.</p>
-                    </div>
-                </div>
-
-                <br>
-
-                <div class="two-cols">
-                    <div class="first">
-                        <h2 class="header">Challenge</h2>
-                    </div>
-                    <div class="second">
-                        <p>Turn a loose concept into a story-driven site that feels polished and easy to navigate. Then implement it cleanly in HTML/CSS and ensure it works smoothly across screen sizes.</p>
-                    </div>
-                </div>
-
-                <br>
-
-                <div class="two-cols">
-                    <div class="first">
-                        <h2 class="header">Objective</h2>
-                    </div>
-                    <div class="second">
-                        <p>Design and ship a responsive website that showcases the history and cultural impact of instant noodles through clear hierarchy, strong typography, and interactive layouts.</p>
-                    </div>
-                </div>
-
-                <br>
-
-                <div class="two-cols">
-                    <div class="first">
-                        <h2 class="header">My Approach</h2>
-                    </div>
-                    <div class="second">
-                        <ul>
-                            <li><i>Creative Direction Alignment:</i> translated the initial concept into a clear page structure and visual plan</li>
-                            <li><i>Information Architecture:</i> organized content into a simple story arc optimized for scrolling and skimming</li>
-                            <li><i>Visual Design System:</i> developed a cohesive identity inspired by colorful ramen packaging (color, type, components)</li>
-                            <li><i>Mockups:</i> created two distinct design directions to explore different layouts</li>
-                            <li><i>Critique & Iteration:</i> reviewed options with my creative director, chose one, and refined it through weekly feedback</li>
-                            <li><i>Build Website:</i> implemented the final design in HTML/CSS, translating components and layout into reusable styles</li>
-                            <li><i>Responsive Design:</i> refined breakpoints and flexible layouts to preserve hierarchy and readability on mobile</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <br>
-
-                <p><i>Mockups A & B</i></p>
-                <div class="two-cols">
-                    <div class="first-img">
-                        <img src="assets/ramen-mockup-a.png" alt="Mockup Version A of the Instant Noodles educational webpage featuring a scrolling layout with images and Learn More cards on ingredients, production, and brands">
-                    </div>
-                    <div class="second-img">
-                        <img src="assets/ramen-mockup-b.png" alt="Mockup Version B of the Instant Noodles educational webpage highlighting a bold red and yellow design and a vertical timeline of instant noodle history">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="contents">
-            <nav id="social-nav">
-                <a href="https://www.linkedin.com/in/ambermedmonds/" target="_blank">
+            <nav class="top-nav-right" aria-label="Social links">
+                <a href="https://www.linkedin.com/in/ambermedmonds/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
-                <a href="mailto:a.m.edmonds@wustl.edu" target="_blank">
+                <a href="mailto:a.m.edmonds@wustl.edu" aria-label="Email">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                </a> 
+                </a>
             </nav>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </footer>
+    </header>
+
+    <main class="project-case-study">
+        <div class="project-case-wrap">
+            <aside class="project-case-left">
+                <p class="project-case-kicker">Web + UX/UI Case Study</p>
+                <h1>Ramen Website</h1>
+                <p class="project-case-intro">This project focused on translating an early concept into a final responsive website.</p>
+                
+                <div class="project-meta-grid">
+                    <article>
+                        <h3>When</h3>
+                        <p>Oct-Nov 2024</p>
+                    </article>
+                    <article>
+                        <h3>Role</h3>
+                        <p>Web Designer</p>
+                    </article>
+                    <article>
+                        <h3>Tools</h3>
+                        <p>Figma, HTML/CSS</p>
+                    </article>
+                </div>
+
+                <div class="project-accordion-group">
+                    <details class="project-accordion">
+                        <summary>Objective</summary>
+                        <div class="project-accordion-content">
+                            <p>Design a story-driven website about instant noodles with clear hierarchy, strong typography, and interactive layouts.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="project-accordion">
+                        <summary>Process</summary>
+                        <div class="project-accordion-content">
+                            <ul>
+                                <li>Collaborated in a creative director-designer workflow</li>
+                                <li>Turned creative direction into a clear page architecture</li>
+                                <li>Tested two visual directions for layout and narrative flow</li>
+                                <li>Iterated weekly and built selected version in HTML/CSS</li>
+                                <li>Refined responsive layouts and breakpoints across devices</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="project-accordion">
+                        <summary>Outcome</summary>
+                        <div class="project-accordion-content">
+                            <p>Delivered a polished, responsive website that balances narrative content with visual style, translating design decisions cleanly into HTML/CSS.</p>
+                        </div>
+                    </details>
+                </div>
+
+                <a class="project-prototype-link" href="https://ambermedmonds.github.io/iffall2024/microsite/final/index.html" target="_blank" rel="noopener noreferrer">View Live Website</a>
+            </aside>
+
+            <section class="project-case-right" aria-label="Ramen website visuals">
+                <figure class="project-visual-card">
+                    <a href="https://ambermedmonds.github.io/iffall2024/microsite/final/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open Ramen live website">
+                        <img src="assets/ramen-cover.png" alt="Instant noodles website mockup featuring a hero section and educational content about the history of instant noodles">
+                    </a>
+                    <figcaption>Final Responsive Site</figcaption>
+                </figure>
+                <figure class="project-visual-card">
+                    <img src="assets/ramen-mockup-a.png" alt="Mockup Version A of the Instant Noodles educational webpage featuring a scrolling layout with images and Learn More cards on ingredients, production, and brands">
+                    <figcaption>Direction A</figcaption>
+                </figure>
+                <figure class="project-visual-card">
+                    <img src="assets/ramen-mockup-b.png" alt="Mockup Version B of the Instant Noodles educational webpage highlighting a bold red and yellow design and a vertical timeline of instant noodle history">
+                    <figcaption>Direction B</figcaption>
+                </figure>
+            </section>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 

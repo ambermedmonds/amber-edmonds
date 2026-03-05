@@ -14,85 +14,104 @@
 <body>
 
     <header>
-        <section class="hero">
-                <div class="top-nav">
-                    <a class="logo" href="index.html">Amber Edmonds</a>
-                    <nav class="nav-bar">
-                        <a href="index.html">Projects</a>
-                        <a href="about.html">About</a>
-                    </nav>
-                </div>
-
-            <div class="hero-contents">
-                <h1>Press Ads</h1>
-                <table>
-                    <tbody>
-                        <tr>
-                            <th class="header">Context</th>
-                            <td>Creative Intern at Constellation</td>
-                        </tr>
-                        <tr>
-                            <th class="header">Timeline</th>
-                            <td>May 2024 - Aug 2024</td>
-                        </tr>
-                        <tr>
-                            <th class="header">Skills</th>
-                            <td>Graphic Design</td>
-                        </tr>
-                        <tr>
-                            <th class="header">Software</th>
-                            <td>Photoshop</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="top-nav">
+            <a class="top-nav-center" href="index.html">Amber Edmonds</a>
+            <div class="top-nav-menu">
+                <nav class="top-nav-left">
+                    <a class="selected" href="index.html">Portfolio</a>
+                    <a href="about.html">About</a>
+                    <a href="file:///Users/amberedmonds/Downloads/2_Career/Career%20Prep/Resume/Amber%20Edmonds%20Resume.pdf">Resume</a>
+                </nav>
             </div>
-        </section>
-    </header>
-
-    <main>
-        <section>
-            <div class="contents">
-
-                <div class="two-cols">
-                    <div class="first">
-                        <h2 class="header">Background</h2>
-                    </div>
-                    <div class="second">
-                        <p>During my internship at Constellation as a Creative Intern, I designed digital ads for one of our clients Henry Rose. The goal was to translate third-party press coverage into social-ready creative that felt editorial, premium, and on-brand.</p>
-                    </div>
-                </div>
-
-                <br>
-
-                <div class="two-cols">
-                    <div class="first">
-                        <h2 class="header">Challenge</h2>
-                    </div>
-                    <div class="second">
-                        <p>Condense long-form reviews into short, scroll-stopping headlines, while keeping the layouts clean, credible, and visually consistent across multiple ad variations.</p>
-                    </div>
-                </div>
-
-                <img class="cover-img" src="assets/HR-cover.png" alt="Digital perfume advertisements displayed on a smartphone alongside social media-style graphics">
-                <img src="assets/HR-mockup-1.jpeg" alt="Perfume advertisements displayed on a smartphone surrounded by editorial-style fragrance graphics">
-                <img src="assets/HR-mockup-2.jpeg" alt="Perfume advertisement mockups displayed on smartphones with editorial-style promotional graphics">
-
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="contents">
-            <nav id="social-nav">
-                <a href="https://www.linkedin.com/in/ambermedmonds/" target="_blank">
+            <nav class="top-nav-right" aria-label="Social links">
+                <a href="https://www.linkedin.com/in/ambermedmonds/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
-                <a href="mailto:a.m.edmonds@wustl.edu" target="_blank">
+                <a href="mailto:a.m.edmonds@wustl.edu" aria-label="Email">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                </a> 
+                </a>
             </nav>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </footer>
+    </header>
+
+    <main class="project-case-study">
+        <div class="project-case-wrap">
+            <aside class="project-case-left">
+                <p class="project-case-kicker">Ad Campaign Work</p>
+                <h1>Press Ads</h1>
+                <p class="project-case-intro">During my internship at Constellation, I designed social-first press ads for Henry Rose by translating long-form editorial quotes into concise, high-impact creatives.</p>
+
+                <div class="project-meta-grid">
+                    <article>
+                        <h3>When</h3>
+                        <p>May-Aug 2024</p>
+                    </article>
+                    <article>
+                        <h3>Role</h3>
+                        <p>Creative Intern</p>
+                    </article>
+                    <article>
+                        <h3>Tools</h3>
+                        <p>Photoshop</p>
+                    </article>
+                </div>
+
+                <div class="project-accordion-group">
+                    <details class="project-accordion">
+                        <summary>Brief</summary>
+                        <div class="project-accordion-content">
+                            <p>Create premium, social-ready press quote ads while remaining on-brand for Henry Rose.</p>
+                        </div>
+                    </details>
+
+                    <details class="project-accordion">
+                        <summary>Challenge</summary>
+                        <div class="project-accordion-content">
+                            <p>Condense long reviews into scroll-stopping headlines without losing credibility, readability, or visual consistency.</p>
+                        </div>
+                    </details>
+
+                    <details class="project-accordion">
+                        <summary>Process</summary>
+                        <div class="project-accordion-content">
+                            <ul>
+                                <li>Selected the strongest quotes from press reviews</li>
+                                <li>Curated product imagery to match scent</li>
+                                <li>Designed editorial-style layouts in Photoshop</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="project-accordion">
+                        <summary>Outcome</summary>
+                        <div class="project-accordion-content">
+                            <p>Produced ads that converted press quotes into clear, premium storytelling for social channels.</p>
+                        </div>
+                    </details>
+                </div>
+            </aside>
+
+            <section class="project-case-right" aria-label="Press ad visuals">
+                <figure class="project-visual-card">
+                    <img src="assets/HR-cover.png" alt="Digital perfume advertisements displayed on a smartphone alongside social media-style graphics">
+                    <figcaption>Press Ad Headlines</figcaption>
+                </figure>
+                <figure class="project-visual-card">
+                    <img src="assets/HR-mockup-1.jpeg" alt="Perfume advertisements displayed on a smartphone surrounded by editorial-style fragrance graphics">
+                    <figcaption>Press Ad Quotes</figcaption>
+                </figure>
+                <figure class="project-visual-card">
+                    <img src="assets/HR-mockup-2.jpeg" alt="Perfume advertisement mockups displayed on smartphones with editorial-style promotional graphics">
+                    <figcaption>Press Ad Headlines</figcaption>
+                </figure>
+            </section>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 

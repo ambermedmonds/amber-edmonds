@@ -11,52 +11,69 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900" rel="stylesheet">
 </head>
-<body>
+<body class="about-page">
     
     <header>
         <div class="top-nav">
-            <a class="logo" href="index.html">Amber Edmonds</a>
-            <nav class="nav-bar">
-                <a href="index.html">Projects</a>
+                    <a class="top-nav-center" href="index.html">Amber Edmonds</a>
+                    <div class="top-nav-menu">
+                        <nav class="top-nav-left">
+                <a href="index.html">Portfolio</a>
                 <a class="selected" href="about.html">About</a>
+                <a href="file:///Users/amberedmonds/Downloads/2_Career/Career%20Prep/Resume/Amber%20Edmonds%20Resume.pdf">Resume</a>
             </nav>
-        </div>
+                    </div>
+                    <nav class="top-nav-right" aria-label="Social links">
+                <a href="https://www.linkedin.com/in/ambermedmonds/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:a.m.edmonds@wustl.edu" aria-label="Email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+            </nav>
+                    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
     </header>
 
     <main>
-        <section id="about">
+        <section id="about" class="about-panel">
             <div class="contents">
                 <div class="two-cols">
                     <div class="first">
                         <img class="headshot" src="assets/headshot.png" alt="Professional headshot of Amber Edmonds">
                     </div>
                     <div class="second">
-                        <h2>About Me</h2><br>
-                        <p>I'm a designer who loves turning complex problems into intuitive, human-centered digital experiences. As a senior at Washington University in St. Louis studying Marketing with minors in Design and Business Analytics, I approach design with both creative empathy and analytical thinking.</p>
-                        <p>My work sits at the intersection of design, product, and strategy. With experience across product management, marketing, and creative roles, I think beyond individual screens by considering user behavior, business goals, and technical constraints when designing solutions. I'm especially interested in how thoughtful design decisions can drive engagement, solve real problems, and translate complexity into clear, user-friendly interfaces.</p>
-                        <p>When I'm not designing, you can usually find me on the tennis court, exploring a new city, or behind a camera. These experiences constantly shape how I observe, adapt, and approach problem-solving.</p>
+                        <h2>About Me</h2><hr>
+                        <p>I'm a designer who loves to build and create things. Currently a senior at Washington University in St. Louis majoring in Marketing with minors in Design and Business Analytics, I'm drawn to work at the intersection of design, product, and strategy where I can consider user behavior, business goals, and technical constraints all at once. The best part for me is taking something complex and making it feel intuitive, delightful, and easy to use. When I'm not designing, you can probably find me on the tennis court, exploring a new city, or behind a camera capturing places and moments along the way.</p>
                     </div>
                 </div>
+            </div>
         </section>
 
-        <section id="background">
+        <section id="background" class="about-panel">
             <div class="contents">
                 <div class="two-cols">
                     <div class="first">
-                        <h2>Education</h2><hr><br>
+                        <h2>Education</h2><hr>
                         <article>
                             <h3>Washington University in St. Louis</h3>
                             <p>
-                                <i>Aug 2022 - May 2026</i><br>
-                                <b>Major:</b> Marketing;
-                                <b>Minors:</b> Design &amp; Business Analytics<br>
+                                <i>Aug 2022 - May 2026</i>
+                            </p>
+                            <p>
+                                <b>Major:</b> Marketing; <b>Minors:</b> Design &amp; Business Analytics
+                            </p>
+                            <p>
                                 <b>Relevant Coursework:</b> Digital Studio, Image Making for Graphic Design, Interaction Foundations, UX Research Methods for Design, Visual Principles for the Screen, Web Development
-                                for Design
                             </p>
                         </article><br>
                     </div>
                     <div class="second">
-                        <h2>Skills & Software</h2><hr><br>
+                        <h2>Skills & Software</h2><hr>
                         <article>
                             <h3>Skills</h3>
                             <p>UX Research, Wireframing &amp; Prototyping, User Testing, Product Thinking, Graphic Design, Web Design, Interaction Design, HTML/CSS</p>
@@ -70,7 +87,7 @@
 
                 <div class="two-cols">
                     <div class="first">
-                        <h2>Campus Involvement</h2><hr><br>
+                        <h2>Campus Involvement</h2><hr>
                         <article>
                             <h3>WashU Women's Tennis Team</h3>
                             <p>
@@ -91,10 +108,10 @@
                                 <i>Jan 2024 - May 2025</i><br>
                                 VP of Marketing
                             </p>
-                        </article><br>
+                        </article>
                     </div>
                     <div class="second">
-                        <h2>Experience</h2><hr><br>
+                        <h2>Experience</h2><hr>
                         <article>
                             <h3>Williams-Sonoma</h3>
                             <p>
@@ -121,20 +138,6 @@
             </div>
         </section>
     </main>
-    
-    <footer>
-        <div class="contents">
-            <nav id="social-nav">
-                <a href="https://www.linkedin.com/in/ambermedmonds/" target="_blank">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                <a href="mailto:a.m.edmonds@wustl.edu" target="_blank">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                </a> 
-            </nav>
-        </div>
-    </footer>
-
     <script src="script.js"></script>
     
 </body>
