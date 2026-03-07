@@ -137,10 +137,12 @@ h3 {
 
 .home-hero {
     height: auto;
-    min-height: 70vh;
-    padding: calc(var(--nav-height) + 84px) 0 88px;
+    padding: calc(var(--nav-height) + 120px) 0 70px;
     color: #f5f2fa;
     background-image: var(--hero-surface-gradient);
+    background-size: 100% 100%;
+    background-position: 0 0;
+    background-color: var(--gray-dark);
 }
 
 .home-hero .hero-contents {
