@@ -308,9 +308,14 @@ h3 {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.top-nav-right a:hover {
-    background-color: var(--gray-dark);
-    color: var(--gray-light-1);
+.top-nav-right a:focus-visible {
+    background-color: rgba(27, 27, 27, 0.12);
+    color: var(--gray-dark);
+}
+
+.top-nav-right a:focus-visible {
+    outline: 2px solid rgba(27, 27, 27, 0.32);
+    outline-offset: 2px;
 }
 
 @media screen and (max-width: 1024px) {
