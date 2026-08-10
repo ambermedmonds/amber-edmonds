@@ -33,6 +33,88 @@ if (topNav && navToggle && navMenu) {
     }
 }
 
+const pageSectionLinks = document.querySelectorAll('.top-nav-left a[href^="#"]')
+
+if (pageSectionLinks.length > 0) {
+    const pageSections = Array.from(pageSectionLinks)
+        .map((link) => document.querySelector(link.getAttribute('href')))
+        .filter(Boolean)
+    let selectedHash = window.location.hash || '#home'
+
+    const setSelectedNavLink = (hash) => {
+        selectedHash = hash
+
+        for (const link of pageSectionLinks) {
+            link.classList.toggle('selected', link.getAttribute('href') === selectedHash)
+        }
+    }
+
+    const updateSelectedNavLink = () => {
+        const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 12
+        const navOffset = topNav ? topNav.offsetHeight + 80 : 164
+        const scrollPosition = window.scrollY + navOffset
+        let activeHash = `#${pageSections[0].id}`
+
+        for (const section of pageSections) {
+            if (atBottom || section.offsetTop <= scrollPosition) {
+                activeHash = `#${section.id}`
+            }
+        }
+
+        setSelectedNavLink(activeHash)
+    }
+
+    for (const link of pageSectionLinks) {
+        link.addEventListener('click', () => {
+            setSelectedNavLink(link.getAttribute('href'))
+        })
+    }
+
+    setSelectedNavLink(selectedHash)
+    updateSelectedNavLink()
+    window.addEventListener('scroll', updateSelectedNavLink, { passive: true })
+    window.addEventListener('resize', updateSelectedNavLink)
+    window.addEventListener('hashchange', updateSelectedNavLink)
+}
+
+const typewriterWord = document.querySelector('.typewriter-word')
+
+if (typewriterWord) {
+    const words = ['visual designer.', 'digital marketer.', 'web developer.', 'content creator.']
+    let wordIndex = 0
+    let letterIndex = 0
+    let isDeleting = false
+
+    const typeWord = () => {
+        const currentWord = words[wordIndex]
+        typewriterWord.textContent = currentWord.slice(0, letterIndex)
+
+        if (!isDeleting && letterIndex < currentWord.length) {
+            letterIndex += 1
+            window.setTimeout(typeWord, 90)
+            return
+        }
+
+        if (!isDeleting && letterIndex === currentWord.length) {
+            isDeleting = true
+            window.setTimeout(typeWord, 1200)
+            return
+        }
+
+        if (isDeleting && letterIndex > 0) {
+            letterIndex -= 1
+            window.setTimeout(typeWord, 55)
+            return
+        }
+
+        isDeleting = false
+        wordIndex = (wordIndex + 1) % words.length
+        window.setTimeout(typeWord, 250)
+    }
+
+    typeWord()
+}
+
 const projectVisualColumns = document.querySelectorAll('.project-case-right')
 
 if (projectVisualColumns.length > 0) {
@@ -55,3 +137,4 @@ if (projectVisualColumns.length > 0) {
         window.addEventListener('resize', syncScrollHint)
     }
 }
+
