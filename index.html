@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -18,26 +19,20 @@
       gtag('config', 'G-XXXXXXXXXX');
     </script>
 </head>
-<body class="home-page">
+<body class="home-page one-page">
 
     <header>
-        <section class="hero home-hero">
+        <section id="home" class="hero home-hero">
                 <div class="top-nav">
-                    <a class="top-nav-center" href="index.html">Amber Edmonds</a>
+                    <a class="top-nav-center" href="#home">Amber Edmonds</a>
                     <div class="top-nav-menu">
                         <nav class="top-nav-left">
-                        <a class="selected" href="index.html">Work</a>
-                        <a href="about.html">About</a>
+                        <a class="selected" href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#work">Work</a>
+                        <a href="#contact">Contact</a>
                     </nav>
                     </div>
-                    <nav class="top-nav-right" aria-label="Social links">
-                        <a href="https://www.linkedin.com/in/ambermedmonds/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
-                        <a href="mailto:a.m.edmonds@wustl.edu" aria-label="Email">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                        </a>
-                    </nav>
                     <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation menu">
                         <span></span>
                         <span></span>
@@ -45,17 +40,216 @@
                     </button>
                 </div>
 
+            <div class="hero-doodles" aria-hidden="true">
+                <img class="hero-doodle hero-doodle--stars-big" src="assets/doodle-1.png" alt="">
+                <img class="hero-doodle hero-doodle--squiggle-2" src="assets/doodle-5.png" alt="">
+                <img class="hero-doodle hero-doodle--leaf" src="assets/doodle-2.png" alt="">
+                <img class="hero-doodle hero-doodle--tennisball" src="assets/doodle-13.png" alt="">
+                <img class="hero-doodle hero-doodle--stars-3" src="assets/doodle-1.png" alt="">
+                <img class="hero-doodle hero-doodle--sun-big" src="assets/doodle-4.png" alt="">
+                <img class="hero-doodle hero-doodle--sun-small" src="assets/doodle-4.png" alt="">
+                <img class="hero-doodle hero-doodle--heart-3" src="assets/doodle-3.png" alt="">
+                <img class="hero-doodle hero-doodle--heart-4" src="assets/doodle-3.png" alt="">
+                <img class="hero-doodle hero-doodle--squiggle" src="assets/doodle-5.png" alt="">
+                <img class="hero-doodle hero-doodle--globe" src="assets/doodle-6.png" alt="">
+                <img class="hero-doodle hero-doodle--gradcap" src="assets/doodle-7.png" alt="">
+                <img class="hero-doodle hero-doodle--trees" src="assets/doodle-8.png" alt="">
+                <img class="hero-doodle hero-doodle--camera" src="assets/doodle-9.png" alt="">
+                <img class="hero-doodle hero-doodle--plane" src="assets/doodle-10.png" alt="">
+                <img class="hero-doodle hero-doodle--bulb" src="assets/doodle-12.png" alt="">
+            </div>
+
             <div class="hero-contents">
                 <h1>Hi, I'm Amber!</h1>
-                <h2 class="hero-description">I'm a designer with a business background who enjoys building meaningful digital experiences.</h2>
+                <h2 class="hero-description">I'm a <span class="typewriter-word" aria-live="polite"></span></h2>
             </div>
         </section>
     </header>
 
     <main>
-        <section class="home-projects">
+        <section id="about" class="about-panel">
             <div class="contents">
-                <h2 class="project-header">Projects</h2>
+                <div class="about-grid">
+                    <div class="about-grid-photo">
+                        <div class="profile-card">
+                            <img class="profile-photo" src="assets/headshot.png" alt="Professional headshot of Amber Edmonds">
+                            <div class="profile-overlay-bottom">
+                                <div class="profile-icons">
+                                    <a class="profile-icon-btn" href="mailto:a.m.edmonds@wustl.edu" aria-label="Email">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </a>
+                                    <a class="profile-icon-btn" href="https://www.linkedin.com/in/ambermedmonds/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <a class="profile-resume-btn" href="https://drive.google.com/file/d/1MUKmGTofoZCbTLwFQ5k2o2U6quHsXWsa/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                    View Resume
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-card about-grid-me">
+                        <h2 class="highlight-pink">About Me</h2>
+                        <p>I'm a recent WashU grad with a background in Marketing, Design, and Business Analytics. I'm drawn to work that bridges product research, design, and strategy. I love digging into the <em>why</em> behind user behavior and turning messy, complex ideas into intuitive digital experiences that people enjoy. When I'm not behind a screen, you can usually find me on the tennis court, exploring new places with my camera in hand, or looking for the best boba and matcha spots.</p>
+                    </div>
+
+                    <div class="about-card about-grid-experience">
+                        <h2 class="highlight-blue">Experience</h2>
+                        <div class="latest-roles">
+                            <div class="latest-role">
+                                <span class="role-logo-wrap role-logo-wrap--sm role-logo-wrap--white"><img src="assets/wsi.png" alt="Williams-Sonoma, Inc. logo"></span>
+                                <div class="latest-role-info">
+                                    <p class="latest-role-title">Tech PM Intern</p>
+                                    <p class="latest-role-company">Williams-Sonoma</p>
+                                    <p class="latest-role-dates">Jun 2025 - Aug 2025</p>
+                                </div>
+                            </div>
+                            <div class="latest-role">
+                                <span class="role-logo-wrap role-logo-wrap--sm"><img src="assets/timely-care.png" alt="TimelyCare logo"></span>
+                                <div class="latest-role-info">
+                                    <p class="latest-role-title">Marketing Assistant</p>
+                                    <p class="latest-role-company">TimelyCare</p>
+                                    <p class="latest-role-dates">Mar 2025 - Dec 2025</p>
+                                </div>
+                            </div>
+                            <div class="latest-role">
+                                <span class="role-logo-wrap role-logo-wrap--sm"><img src="assets/constellation.png" alt="Constellation logo"></span>
+                                <div class="latest-role-info">
+                                    <p class="latest-role-title">Creative Intern</p>
+                                    <p class="latest-role-company">Constellation</p>
+                                    <p class="latest-role-dates">May 2024 - Aug 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-card about-grid-campus">
+                        <h2 class="highlight-green">Activities</h2>
+                        <div class="latest-roles">
+                            <div class="latest-role">
+                                <span class="role-logo-wrap role-logo-wrap--sm"><img src="assets/washu-wten.png" alt="WashU Women's Tennis Team logo"></span>
+                                <div class="latest-role-info">
+                                    <p class="latest-role-title">WashU Tennis Team</p>
+                                    <p class="latest-role-company">Social Media Manager</p>
+                                    <p class="latest-role-dates">Jun 2024 - May 2026</p>
+                                </div>
+                            </div>
+                            <div class="latest-role">
+                                <span class="role-logo-wrap role-logo-wrap--sm"><img src="assets/second-serve.png" alt="WashU Second Serve logo"></span>
+                                <div class="latest-role-info">
+                                    <p class="latest-role-title">WashU Second Serve</p>
+                                    <p class="latest-role-company">Vice President + Marketing Chair</p>
+                                    <p class="latest-role-dates">Jan 2025 - May 2026</p>
+                                </div>
+                            </div>
+                            <div class="latest-role">
+                                <span class="role-logo-wrap role-logo-wrap--sm"><img src="assets/twn.png" alt="The Women's Network logo"></span>
+                                <div class="latest-role-info">
+                                    <p class="latest-role-title">The Women's Network</p>
+                                    <p class="latest-role-company">VP of Marketing</p>
+                                    <p class="latest-role-dates">Jan 2024 - May 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-card about-grid-skills">
+                        <h2 class="highlight-purple">Skills</h2>
+                        <div class="tag-list">
+                            <span class="tag tag--purple">Design thinking</span>
+                            <span class="tag tag--purple">UX research</span>
+                            <span class="tag tag--purple">Journey mapping</span>
+                            <span class="tag tag--purple">Persona development</span>
+                            <span class="tag tag--purple">Wireframing</span>
+                            <span class="tag tag--purple">Prototyping</span>
+                            <span class="tag tag--purple">Usability testing</span>
+                            <span class="tag tag--purple">Responsive design</span>
+                            <span class="tag tag--purple">Interaction design</span>
+                            <span class="tag tag--purple">Web design</span>
+                            <span class="tag tag--purple">Graphic design</span>
+                            <span class="tag tag--purple">HTML/CSS/JS</span>
+                        </div>
+                    </div>
+
+                    <div class="about-card about-grid-software">
+                        <h2 class="highlight-orange">Software</h2>
+                        <div class="logo-marquee">
+                            <div class="logo-track">
+                                <div class="logo-item">
+                                    <img src="assets/figma.png" alt="Figma">
+                                    <span>Figma</span>
+                                </div>
+                                <div class="logo-item">
+                                    <img src="assets/canva.png" alt="Canva">
+                                    <span>Canva</span>
+                                </div>
+                                <div class="logo-item">
+                                    <img src="assets/photoshop.png" alt="Photoshop">
+                                    <span>Photoshop</span>
+                                </div>
+                                <div class="logo-item">
+                                    <img src="assets/after-effects.png" alt="After Effects">
+                                    <span>After Effects</span>
+                                </div>
+                                <div class="logo-item">
+                                    <img src="assets/vs-code.png" alt="Visual Studio Code">
+                                    <span>VS Code</span>
+                                </div>
+                                <div class="logo-item">
+                                    <img src="assets/codex.png" alt="Codex">
+                                    <span>Codex</span>
+                                </div>
+                                <div class="logo-item">
+                                    <img src="assets/claude.png" alt="Claude Code">
+                                    <span>Claude Code</span>
+                                </div>
+                                <div class="logo-item">
+                                    <img src="assets/tableau.png" alt="Tableau">
+                                    <span>Tableau</span>
+                                </div>
+                                <div class="logo-item" aria-hidden="true">
+                                    <img src="assets/figma.png" alt="">
+                                    <span>Figma</span>
+                                </div>
+                                <div class="logo-item" aria-hidden="true">
+                                    <img src="assets/canva.png" alt="">
+                                    <span>Canva</span>
+                                </div>
+                                <div class="logo-item" aria-hidden="true">
+                                    <img src="assets/photoshop.png" alt="">
+                                    <span>Photoshop</span>
+                                </div>
+                                <div class="logo-item" aria-hidden="true">
+                                    <img src="assets/after-effects.png" alt="">
+                                    <span>After Effects</span>
+                                </div>
+                                <div class="logo-item" aria-hidden="true">
+                                    <img src="assets/vs-code.png" alt="">
+                                    <span>VS Code</span>
+                                </div>
+                                <div class="logo-item" aria-hidden="true">
+                                    <img src="assets/codex.png" alt="">
+                                    <span>Codex</span>
+                                </div>
+                                <div class="logo-item" aria-hidden="true">
+                                    <img src="assets/claude.png" alt="">
+                                    <span>Claude Code</span>
+                                </div>
+                                <div class="logo-item" aria-hidden="true">
+                                    <img src="assets/tableau.png" alt="">
+                                    <span>Tableau</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="home-projects">
+            <div class="contents">
+                <h2 class="project-header">Selected Work</h2>
 
                 <div class="card-grid">
 
@@ -64,13 +258,61 @@
                             <img class="card-img" src="assets/platform-cover.png" alt="Club Discovery platform interface displayed on a laptop screen">
                             <div class="project-tags">
                                 <div class="tag">
-                                    UX/UI
+                                    UX Research + Design
                                 </div>
                             </div>
                             <h3 class="header">WashU Club Discovery Platform</h3>
-                            <p class="subheader">Conducted UX research and designed a prototype to improve club discovery</p>
+                            <p class="subheader">A prototype designed to improve club discovery and engagement at WashU</p>
                         </a>
                     </article>
+
+                    <article class="card" data-type="ads">
+                        <a class="card-link" href="constellation.html">
+                            <img class="card-img" src="assets/auto-cover.png" alt="Automotive digital advertisements displayed across mobile and desktop screens">
+                            <div class="project-tags">
+                                <div class="tag">
+                                    Graphic Design
+                                </div>
+                            </div>
+                            <h3 class="header">Constellation Digital Ads</h3>
+                            <p class="subheader">Multi-format ads for top automotive companies and luxury brand Henry Rose</p>
+                        </a>
+                    </article>
+
+                    <article class="card" data-type="web">
+                        <a class="card-link" href="smiski.html">
+                            <img class="card-img" src="assets/smiski-adventures.png" alt="Desktop mockup displaying the Smiski Adventures website landing page">
+                            <div class="project-tags">
+                                <div class="tag">
+                                    Web Design
+                                </div>
+                            </div>
+                            <h3 class="header">Smiski Adventures Website</h3>
+                            <p class="subheader">An interactive, hotspot-driven web experience exploring Smiski collectibles</p>
+                        </a>
+                    </article>
+
+                    <article class="card" data-type="web">
+                        <a class="card-link" href="type.html">
+                            <img class="card-img" src="assets/type-cover.png" alt="">
+                            <div class="project-tags">
+                                <div class="tag">
+                                    Web Design
+                                </div>
+                            </div>
+                            <h3 class="header">The Evolution of Type Website</h3>
+                            <p class="subheader">A story-driven web project exploring 100 landmark typefaces</p>
+                        </a>
+                    </article>
+
+                </div>
+
+                <!--
+                <br><br>
+
+                <h2 class="project-header">Other Projects</h2>
+
+                <div class="card-grid">
 
                     <article class="card" data-type="web">
                         <a class="card-link" href="ramen-website.html">
@@ -81,33 +323,20 @@
                                 </div>
                             </div>
                             <h3 class="header">Ramen Website</h3>
-                            <p class="subheader">Designed and built a responsive website that tells the story of instant noodles</p>
+                            <p class="subheader">A responsive website that tells the story of instant noodles</p>
                         </a>
                     </article>
 
-                    <article class="card" data-type="ads">
-                        <a class="card-link" href="auto-ads.html">
-                            <img class="card-img" src="assets/auto-cover.png" alt="Automotive digital advertisements displayed across mobile and desktop screens">
+                    <article class="card" data-type="web">
+                        <a class="card-link" href="nudo-website.html">
+                            <img class="card-img" src="assets/nudo-house-cover.jpg" alt="">
                             <div class="project-tags">
                                 <div class="tag">
-                                    Ads
+                                    Web
                                 </div>
                             </div>
-                            <h3 class="header">Automotive Ads</h3>
-                            <p class="subheader">Produced compliance-ready multi-format ads for top automotive brands</p>
-                        </a>
-                    </article>
-
-                    <article class="card" data-type="ads">
-                        <a class="card-link" href="press-ads.html">
-                            <img class="card-img" src="assets/HR-cover.png" alt="Digital perfume advertisements displayed on a smartphone alongside social media-style graphics">
-                            <div class="project-tags">
-                                <div class="tag">
-                                    Ads
-                                </div>
-                            </div>
-                            <h3 class="header">Press Ads</h3>
-                            <p class="subheader">Designed press-quote ads, translating reviews into scroll-stopping creative</p>
+                            <h3 class="header">Nudo House Website</h3>
+                            <p class="subheader">A website...</p>
                         </a>
                     </article>
 
@@ -120,7 +349,7 @@
                                 </div>
                             </div>
                             <h3 class="header">WashU Women's Tennis Social Media</h3>
-                            <p class="subheader">Created graphics highlighting gamedays, results, rankings, and spotlights</p>
+                            <p class="subheader">Graphics highlighting gamedays, results, rankings, and spotlights</p>
                         </a>
                     </article>
 
@@ -133,14 +362,43 @@
                                 </div>
                             </div>
                             <h3 class="header">The Women's Network Social Media</h3>
-                            <p class="subheader">Designed social content to promote events and recruit members</p>
+                            <p class="subheader">Social content to promote events and recruit members</p>
                         </a>
                     </article>
-
                 </div>
-            </div> 
+                -->
+            </div>
         </section>
     </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="contents footer-contents">
+            <h2 class="footer-heading">Let's Work Together</h2>
+            <p class="footer-subheading">CONNECT WITH ME</p>
+            <span class="footer-email">a.m.edmonds@wustl.edu</span>
+            <div class="footer-social">
+                <a class="footer-social-btn" href="mailto:a.m.edmonds@wustl.edu" aria-label="Email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+                <a class="footer-social-btn" href="https://www.linkedin.com/in/ambermedmonds/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a class="footer-social-btn" href="https://www.instagram.com/ambermedmonds/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div class="contents footer-bottom">
+            <p class="footer-copyright">&copy; 2026 Amber Edmonds</p>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 
 </body>
