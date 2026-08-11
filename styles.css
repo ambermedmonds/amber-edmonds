@@ -1534,7 +1534,7 @@ button:hover {
 }
 
 .footer-heading {
-    margin-bottom: 18px;
+    margin-bottom: 6px;
     color: #ffffff;
     font-size: clamp(2.4rem, 6vw, 4rem);
     line-height: 1.05;
