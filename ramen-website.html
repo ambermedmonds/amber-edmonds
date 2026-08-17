@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amber's Portfolio</title>
+    <title>Instant Ramen Website | Amber Edmonds</title>
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,10 +27,8 @@
             <a class="top-nav-center" href="index.html#home">Amber Edmonds</a>
             <div class="top-nav-menu">
                 <nav class="top-nav-left">
-                    <a href="index.html#home">Home</a>
-                    <a href="index.html#about">About</a>
-                    <a class="selected" href="index.html#work">Work</a>
-                    <a href="index.html#contact">Contact</a>
+                <a href="index.html#work">Work</a>
+                <a href="about.html">About</a>
                 </nav>
             </div>
             <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation menu">
@@ -41,80 +39,103 @@
         </div>
     </header>
 
-    <main class="project-case-study">
-        <div class="project-case-wrap">
+    <main class="project-case-study project-case-study--light">
+        <div class="project-case-wrap project-case-wrap--stacked project-case-wrap--wide-left">
             <aside class="project-case-left">
-                <p class="project-case-kicker">Web Design</p>
-                <h1>Ramen Website</h1>
-                <p class="project-case-intro">This project focused on translating an early concept into a final responsive website.</p>
-                
-                <div class="project-meta-grid">
-                    <article>
-                        <h3>When</h3>
-                        <p>Oct-Nov 2024</p>
-                    </article>
-                    <article>
-                        <h3>Role</h3>
-                        <p>Web Designer</p>
-                    </article>
-                    <article>
-                        <h3>Tools</h3>
-                        <p>Figma, HTML/CSS</p>
-                    </article>
+                <nav class="project-breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html#archive">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                        <span class="project-breadcrumb-label">Other Projects</span>
+                    </a>
+                    <span>/</span>
+                    <span class="project-breadcrumb-current">Instant Ramen Website</span>
+                </nav>
+
+                <div class="project-overview">
+                    <div class="project-overview-main">
+                        <p class="project-case-kicker">Web Design & Development</p>
+                        <h1>Instant Ramen Website</h1>
+
+                        <p class="project-case-intro">For my Interaction Foundations class at WashU, I designed and built a responsive website exploring the history, ingredients, production, and iconic brands of instant noodles. Working within a creative director-designer workflow, I translated feedback into a structured web architecture and explored two distinct visual design directions to refine layout, hierarchy, and narrative flow. The final concept was coded from scratch in HTML/CSS, ensuring responsive breakpoints across devices.</p>
+
+                        <div class="project-cta-group">
+                            <a class="project-prototype-link project-prototype-link--primary" href="https://ambermedmonds.github.io/iffall2024/microsite/final/index.html" target="_blank" rel="noopener noreferrer">View Site</a>
+                            <a class="project-prototype-link" href="https://www.figma.com/design/XR4jWNDy0pDOzjd5AlwcTs/Ramen-Website-Mockup?node-id=0-1&t=loKKRX5OImC4sbm8-1" target="_blank" rel="noopener noreferrer">View Figma Directions</a>
+                        </div>
+                    </div>
+
+                    <div class="project-overview-side">
+                        <div class="project-meta-grid project-meta-grid--stacked">
+                            <article>
+                                <h3>Role</h3>
+                                <p>Web Designer & Developer</p>
+                            </article>
+                            <article>
+                                <h3>Timeline</h3>
+                                <p>Oct - Nov 2024 <br>(5 Weeks)</p>
+                            </article>
+                            <article>
+                                <h3>Tools</h3>
+                                <p>Figma, VS Code</p>
+                            </article>
+                        </div>
+
+                        <div class="project-skills">
+                            <h3>Skills</h3>
+                            <div class="tag-list">
+                                <span class="tag">Web Design</span>
+                                <span class="tag">Responsive Design</span>
+                                <span class="tag">HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="project-accordion-group">
-                    <details class="project-accordion">
-                        <summary>Objective</summary>
-                        <div class="project-accordion-content">
-                            <p>Design a story-driven website about instant noodles with clear hierarchy, strong typography, and interactive layouts.
-                            </p>
-                        </div>
-                    </details>
-
-                    <details class="project-accordion">
-                        <summary>Process</summary>
-                        <div class="project-accordion-content">
-                            <ul>
-                                <li>Collaborated in a creative director-designer workflow</li>
-                                <li>Turned creative direction into a clear page architecture</li>
-                                <li>Tested two visual directions for layout and narrative flow</li>
-                                <li>Iterated weekly and built selected version in HTML/CSS</li>
-                                <li>Refined responsive layouts and breakpoints across devices</li>
-                            </ul>
-                        </div>
-                    </details>
-
-                    <details class="project-accordion">
-                        <summary>Outcome</summary>
-                        <div class="project-accordion-content">
-                            <p>Delivered a polished, responsive website that balances narrative content with visual style, translating design decisions cleanly into HTML/CSS.</p>
-                        </div>
-                    </details>
-                </div>
-
-                <a class="project-prototype-link" href="https://ambermedmonds.github.io/iffall2024/microsite/final/index.html" target="_blank" rel="noopener noreferrer">View Live Website</a>
             </aside>
 
             <section class="project-case-right" aria-label="Ramen website visuals">
                 <figure class="project-visual-card">
-                    <a href="https://ambermedmonds.github.io/iffall2024/microsite/final/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open Ramen live website">
-                        <img src="assets/ramen-cover.png" alt="Instant noodles website mockup featuring a hero section and educational content about the history of instant noodles">
-                    </a>
+                    <img src="assets/thumbnails/ramen-cover.jpg" alt="Instant noodles website mockup featuring a hero section and educational content about the history of instant noodles">
                     <figcaption>Final Responsive Site</figcaption>
                 </figure>
-                <figure class="project-visual-card">
-                    <img src="assets/ramen-mockup-a.png" alt="Mockup Version A of the Instant Noodles educational webpage featuring a scrolling layout with images and Learn More cards on ingredients, production, and brands">
-                    <figcaption>Direction A</figcaption>
-                </figure>
-                <figure class="project-visual-card">
-                    <img src="assets/ramen-mockup-b.png" alt="Mockup Version B of the Instant Noodles educational webpage highlighting a bold red and yellow design and a vertical timeline of instant noodle history">
-                    <figcaption>Direction B</figcaption>
-                </figure>
+                <div class="project-visual-row">
+                    <figure class="project-visual-card">
+                        <img src="assets/ramen/mockup-a.png" alt="Mockup Version A of the Instant Noodles educational webpage featuring a scrolling layout with images and Learn More cards on ingredients, production, and brands">
+                        <figcaption>Direction A</figcaption>
+                    </figure>
+                    <figure class="project-visual-card">
+                        <img src="assets/ramen/mockup-b.png" alt="Mockup Version B of the Instant Noodles educational webpage highlighting a bold red and yellow design and a vertical timeline of instant noodle history">
+                        <figcaption>Direction B</figcaption>
+                    </figure>
+                </div>
             </section>
         </div>
     </main>
 
+
+    <section class="next-projects">
+        <div class="next-projects-wrap">
+            <h2>Keep Exploring</h2>
+            <div class="next-projects-grid">
+                <a class="card-link next-project-card" href="smiski.html">
+                    <img class="next-project-img" src="assets/thumbnails/smiski-cover.png" alt="Smiski Adventures landing page on a desktop monitor mockup with green and yellow branding">
+                    <div class="next-project-body">
+                        <h3 class="header">Smiski Adventures Website</h3>
+                        <p class="next-project-desc">An interactive, hotspot-driven web experience exploring Smiski collectibles</p>
+                    </div>
+                </a>
+
+                <a class="card-link next-project-card" href="nudo-website.html">
+                    <img class="next-project-img" src="assets/thumbnails/nudo-house-cover.jpg" alt="Nudo House restaurant website homepage mockup">
+                    <div class="next-project-body">
+                        <h3 class="header">Nudo House Website</h3>
+                        <p class="next-project-desc">A modern website redesign and front-end build for a local restaurant</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <footer class="site-footer" id="contact">
         <div class="contents footer-contents">
@@ -133,12 +154,10 @@
             </div>
         </div>
         <div class="contents footer-bottom">
-            <p class="footer-copyright">&copy; 2026 Amber Edmonds</p>
+            <p class="footer-copyright">&copy; 2026 Amber Edmonds &middot; Built with Claude Code</p>
             <nav class="footer-nav" aria-label="Footer navigation">
-                <a href="index.html#home">Home</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#work">Work</a>
-                <a href="index.html#contact">Contact</a>
+            <a href="index.html#work">Work</a>
+            <a href="about.html">About</a>
             </nav>
         </div>
     </footer>
