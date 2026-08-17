@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amber's Portfolio</title>
+    <title>WashU Club Discovery Platform | Amber Edmonds</title>
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,10 +27,8 @@
             <a class="top-nav-center" href="index.html#home">Amber Edmonds</a>
             <div class="top-nav-menu">
                 <nav class="top-nav-left">
-                    <a href="index.html#home">Home</a>
-                    <a href="index.html#about">About</a>
-                    <a class="selected" href="index.html#work">Work</a>
-                    <a href="index.html#contact">Contact</a>
+                <a href="index.html#work">Work</a>
+                <a href="about.html">About</a>
                 </nav>
             </div>
             <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation menu">
@@ -41,118 +39,300 @@
         </div>
     </header>
 
-    <main class="project-case-study">
-        <div class="project-case-wrap">
-            <aside class="project-case-left">
-                <p class="project-case-kicker">UX Research Case Study</p>
-                <h1>WashU Club Discovery Platform</h1>
-                <p class="project-case-intro">This project focused on researching ways to help WashU students discover and join campus organizations, while making it easier for club leaders to recruit and onboard new members.</p>
+    <main class="project-case-study project-case-study--light">
+        <div class="project-case-wrap project-case-wrap--stacked project-case-wrap--with-toc">
+            <div class="project-toc-rail">
+                <nav class="project-toc" aria-label="Case study sections">
+                    <p class="project-toc-label">Contents</p>
+                    <a href="#problem">Problem</a>
+                    <a href="#research">Research</a>
+                    <a href="#insights">Insights</a>
+                    <a href="#solution">Prototype</a>
+                    <a href="#testing">Testing</a>
+                    <a href="#next-steps">Next Steps</a>
+                    <a href="#see-next">Explore More</a>
+                </nav>
+            </div>
 
-                <div class="project-meta-grid">
-                    <article>
-                        <h3>When</h3>
-                        <p>Feb-Apr 2025</p>
-                    </article>
-                    <article>
-                        <h3>Role</h3>
-                        <p>UX Researcher + Product Designer</p>
-                    </article>
-                    <article>
-                        <h3>Tools</h3>
-                        <p>Figma, FigJam</p>
-                    </article>
+            <div class="project-main">
+                <aside class="project-case-left">
+                    <nav class="project-breadcrumb" aria-label="Breadcrumb">
+                        <a href="index.html#work">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                            <span class="project-breadcrumb-label">Case Studies</span>
+                        </a>
+                        <span>/</span>
+                        <span class="project-breadcrumb-current">WashU Club Discovery Platform</span>
+                    </nav>
+
+                    <figure class="project-visual-card">
+                        <img src="assets/club-discovery/platform-hero.jpg" alt="Club Discovery platform interface displayed on a laptop screen">
+                    </figure>
+
+                    <div class="project-overview">
+                        <div class="project-overview-main">
+                            <p class="project-case-kicker">UX Research & Design</p>
+                            <h1>WashU Club Discovery Platform</h1>
+
+                            <p class="project-case-intro">I worked on this project over 8 weeks for my UX Research Methods for Design course at WashU. The goal was to identify a problem, conduct qualitative and quantitative user research, and design a validated product solution.</p>
+
+                            <div class="project-cta-group">
+                                <a class="project-prototype-link project-prototype-link--primary" href="https://www.figma.com/deck/sSMvVt01FI8zuBSnXKT8T8/ART-332J--Project-2?node-id=55-3389&t=Hyp4O8ZDpb3WOFZ4-1" target="_blank" rel="noopener noreferrer">View Slide Deck</a>
+                                <a class="project-prototype-link" href="#solution">Jump to Prototype ↓</a>
+                            </div>
+                        </div>
+
+                        <div class="project-overview-side">
+                            <div class="project-meta-grid project-meta-grid--stacked">
+                                <article>
+                                    <h3>Role</h3>
+                                    <p>UX Researcher + Product Designer</p>
+                                </article>
+                                <article>
+                                    <h3>Timeline</h3>
+                                    <p>Feb - Apr 2025 (8 Weeks)</p>
+                                </article>
+                                <article>
+                                    <h3>Tools</h3>
+                                    <p>Figma, FigJam</p>
+                                </article>
+                            </div>
+
+                            <div class="project-skills">
+                                <h3>Skills</h3>
+                                <div class="tag-list">
+                                    <span class="tag">UX Research</span>
+                                    <span class="tag">User Interviews</span>
+                                    <span class="tag">Surveys</span>
+                                    <span class="tag">Affinity Mapping</span>
+                                    <span class="tag">Personas</span>
+                                    <span class="tag">Journey Mapping</span>
+                                    <span class="tag">Prototyping</span>
+                                    <span class="tag">Usability Testing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+            <hr class="project-divider">
+
+            <div class="project-content">
+                <h2 id="problem">Problem</h2>
+                <h3>Fragmented discovery leads to missed connections.</h3>
+
+                <p>WashU has hundreds of amazing student organizations, but actually finding the right group can be a frustrating experience. Club info is scattered across random group chats, social media accounts, and campus flyers. While WashU does have an official platform called <a class="wugo-link" target="_blank" rel="noopener noreferrer" href="https://wustl.presence.io/organizations">WUGO</a>, students find it slow, visually dated, cluttered with unhelpful info, and difficult to navigate.</p>
+
+                <figure class="project-visual-card project-visual-card--framed project-visual-card--tight-bottom">
+                    <div class="crop-top-bottom-5">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets/club-discovery/wugo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <figcaption>WUGO's Current Experience</figcaption>
+                </figure>
+
+                <hr class="project-divider">
+
+                <h2 id="research">Research</h2>
+                <h3>Uncovering the friction on both sides.</h3>
+
+                <p>I set out to understand the hurdles students face when finding and joining clubs, as well as the administrative headaches club leaders run into when recruiting and onboarding new members.</p>
+
+                <p>To get the full picture, I used a mixed-methods approach:</p>
+                <ul class="project-list">
+                    <li>Quantitative Surveys: Gathered data on discovery habits, what students prioritize most in a club, and challenges they face during their search.</li>
+                    <li>Qualitative Interviews: Sat down with 3 undergrad students and 3 club leaders to uncover common pain points, frustrations, workflow bottlenecks, and opportunities to improve the experience.</li>
+                </ul>
+
+                <hr class="project-divider">
+
+                <h2 id="insights">Insights</h2>
+                <h3>From sticky notes to real insights.</h3>
+
+                <p>To make sense of all the data, I organized survey results and interview feedback into key themes such as current experiences, motivations, behaviors, delights, pain points, and opportunities.</p>
+
+                 <figure class="project-visual-card project-visual-card--framed">
+                    <a href="https://www.figma.com/board/nfSVRUiy4fj4yc0m8Bdi1E/ART-332J-Project-2--Research?node-id=0-1&t=Wa56CANU0y1Subjr-1" target="_blank" rel="noopener noreferrer" aria-label="Open Affinity Map" data-hover-label="View in FigJam">
+                        <img src="assets/club-discovery/affinity-map.png" alt="Affinity map from user research showing grouped sticky notes for current involvement, motivating factors, behaviors, delights, pain points, and opportunities">
+                    </a>
+                    <figcaption>Affinity Mapping</figcaption>
+                </figure>
+                      
+                <p>After clustering research findings, I built dedicated personas and journey maps for both students and club leaders, allowing me to visualize the end-to-end experience and uncover critical friction points.</p>
+
+                <div class="persona-journey-grid">
+                    <figure class="project-visual-card project-visual-card--framed">
+                        <a href="https://www.figma.com/design/JKqGbyrNG1QJvz73edVYHC/ART-332J-Project-2--User-Personas---Journey-Maps?t=aDSxK1BxHDKU6Ips-1" target="_blank" rel="noopener noreferrer" aria-label="Open User Personas" data-hover-label="View in Figma">
+                            <img src="assets/club-discovery/student-persona.png" alt="Student persona profile describing goals, behaviors, needs, and frustrations when discovering campus organizations">
+                        </a>
+                        <figcaption>Student Persona</figcaption>
+                    </figure>
+
+                    <figure class="project-visual-card project-visual-card--framed">
+                        <a href="https://www.figma.com/design/JKqGbyrNG1QJvz73edVYHC/ART-332J-Project-2--User-Personas---Journey-Maps?t=aDSxK1BxHDKU6Ips-1" target="_blank" rel="noopener noreferrer" aria-label="Open User Personas" data-hover-label="View in Figma">
+                            <img src="assets/club-discovery/leader-persona.png" alt="Club leader persona outlining goals, needs, behaviors, and challenges in managing a student organization">
+                        </a>
+                        <figcaption>Club Leader Persona</figcaption>
+                    </figure>
+
+                    <figure class="project-visual-card project-visual-card--framed">
+                        <a href="https://www.figma.com/design/JKqGbyrNG1QJvz73edVYHC/ART-332J-Project-2--User-Personas---Journey-Maps?node-id=2204-197&t=aDSxK1BxHDKU6Ips-1" target="_blank" rel="noopener noreferrer" aria-label="Open User Journey Maps" data-hover-label="View in Figma">
+                            <img src="assets/club-discovery/student-journey.png" alt="Student journey map illustrating stages, emotions, touchpoints, and pain points when discovering and joining campus clubs">
+                        </a>
+                        <figcaption>Student Journey Map</figcaption>
+                    </figure>
+
+                    <figure class="project-visual-card project-visual-card--framed">
+                        <a href="https://www.figma.com/design/JKqGbyrNG1QJvz73edVYHC/ART-332J-Project-2--User-Personas---Journey-Maps?node-id=2204-197&t=aDSxK1BxHDKU6Ips-1" target="_blank" rel="noopener noreferrer" aria-label="Open User Journey Maps" data-hover-label="View in Figma">
+                            <img src="assets/club-discovery/leader-journey.png" alt="Club leader journey map showing stages, touchpoints, and pain points for recruiting and onboarding new members">
+                        </a>
+                        <figcaption>Club Leader Journey Map</figcaption>
+                    </figure>
                 </div>
 
-                <div class="project-accordion-group">
-                    <details class="project-accordion">
-                        <summary>Problem</summary>
-                        <div class="project-accordion-content">
-                            <p>Club discovery at WashU is fragmented across word-of-mouth, social media, flyers, and an online platform called <a class="wugo-link" target="blank" href="https://wustl.presence.io/organizations">WUGO</a>. Info is often outdated or incomplete, making it hard for students to compare clubs and take next steps.</p>
+                <p><b>The big takeaways:</b></p>
+                <div class="takeaway-band">
+                    <div class="takeaway-grid">
+                        <div class="takeaway-card">
+                            <h4>One Central Hub</h4>
+                            <p>Students want a single, reliable place that brings scattered club info, announcements, and leadership contacts all into one place.</p>
                         </div>
-                    </details>
-
-                    <details class="project-accordion">
-                        <summary>Process</summary>
-                        <div class="project-accordion-content">
-                            <ul>
-                                <li>Surveys and interviews to understand behavior patterns</li>
-                                <li>Affinity mapping to synthesize pain points + opportunities</li>
-                                <li>Persona + journey mapping for students and club leaders</li>
-                                <li>Prototype development and usability tests</li>
-                            </ul>
+                        <div class="takeaway-card">
+                            <h4>Smarter Discovery</h4>
+                            <p>Students want intuitive, interest-based filters and tailored recommendations to find campus clubs that align with what they care about.</p>
                         </div>
-                    </details>
-
-                    <details class="project-accordion">
-                        <summary>Key Insights</summary>
-                        <div class="project-accordion-content">
-                            <ul>
-                                <li>Students want a single, easy-to-use hub for all club info</li>
-                                <li>Students want clearer expectations before committing</li>
-                                <li>Students want interest-based filters to find relevant clubs</li>
-                            </ul>
+                        <div class="takeaway-card">
+                            <h4>Personal Dashboard</h4>
+                            <p>Students want a personal home base to manage their profile, customize their interests, and easily track current club involvements.</p>
                         </div>
-                    </details>
-
-                    <details class="project-accordion">
-                        <summary>Outcome</summary>
-                        <div class="project-accordion-content">
-                            <p>This concept centralizes club info, personalizes discovery, and streamlines onboarding workflows to improve how students find clubs and how leaders engage new members.</p>
+                        <div class="takeaway-card">
+                            <h4>No More Guesswork</h4>
+                            <p>Students want transparent club profiles with key info like weekly time commitments, meeting schedules, and expectations before joining.</p>
                         </div>
-                    </details>
+                    </div>
                 </div>
 
-                <a class="project-prototype-link" href="https://www.figma.com/deck/sSMvVt01FI8zuBSnXKT8T8/ART-332J--Project-2?node-id=55-3389&t=Hyp4O8ZDpb3WOFZ4-1" target="_blank" rel="noopener noreferrer">See Full Case Study</a>
-            </aside>
+                <hr class="project-divider">
 
-            <section class="project-case-right" aria-label="Club Discovery visuals">
-                <figure class="project-visual-card">
-                    <a href="https://www.figma.com/proto/6bFifSgK3R7hCkRuvpRlXR/ART-332J-Project-2--Prototype?node-id=15-1471&t=bb96MrrJ63z1gM3r-1" target="_blank" rel="noopener noreferrer" aria-label="Open Club Discovery prototype">
-                        <img src="assets/platform-cover.png" alt="Club Discovery platform interface displayed on a laptop screen">
-                    </a>
-                    <figcaption>Hero Concept</figcaption>
+                <h2 id="solution">Prototype</h2>
+                <h3>A better way to connect: simple, centralized, and personalized.</h3>
+
+                <p>I built a mid-fidelity Figma prototype focused on streamlined discovery and clear club profiles.</p>
+
+                <div class="solution-feature">
+                    <p class="solution-feature-eyebrow">Feature 01 — Smart Explore Page</p>
+                    <p class="solution-feature-body">Features a "Recommended for You" section at the top based on student interests, paired with dynamic filters for category, school, and commitment level so students can browse without being overwhelmed.</p>
+                </div>
+
+                <figure class="project-visual-card project-visual-card--framed">
+                    <div class="crop-top-bottom-5">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets/club-discovery/explore-filters.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </figure>
-                <figure class="project-visual-card">
-                    <img src="assets/affinity-map.png" alt="Affinity map from user research showing grouped sticky notes for current involvement, motivating factors, behaviors, delights, pain points, and opportunities">
-                    <figcaption>Research Synthesis</figcaption>
+
+                <div class="solution-feature">
+                    <p class="solution-feature-eyebrow">Feature 02 — Student Dashboard</p>
+                    <p class="solution-feature-body">A personal home base to manage your profile, customize interests for better recommendations, and keep track of all your active club memberships.</p>
+                </div>
+
+                <figure class="project-visual-card project-visual-card--framed">
+                    <div class="crop-top-bottom-5">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets/club-discovery/student-profile.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </figure>
-                <figure class="project-visual-card">
-                    <a href="https://www.figma.com/design/JKqGbyrNG1QJvz73edVYHC/ART-332J-Project-2--User-Personas---Journey-Maps?t=aDSxK1BxHDKU6Ips-1" target="_blank" rel="noopener noreferrer" aria-label="Open User Personas">
-                        <img src="assets/student-persona.png" alt="Student persona profile describing goals, behaviors, needs, and frustrations when discovering campus organizations">
-                    </a>
-                    <figcaption>Student Persona</figcaption>
+
+                <div class="solution-feature">
+                    <p class="solution-feature-eyebrow">Feature 03 — Standardized Club Profiles</p>
+                    <p class="solution-feature-body">Clean, standardized layouts that showcase the club's mission, upcoming events, expectations, time commitments, photo galleries, and leadership contact info at a glance.</p>
+                </div>
+
+                <figure class="project-visual-card project-visual-card--framed">
+                    <div class="crop-top-bottom-5">
+                        <video autoplay loop muted playsinline>
+                            <source src="assets/club-discovery/club-profile.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </figure>
-                <figure class="project-visual-card">
-                    <a href="https://www.figma.com/design/JKqGbyrNG1QJvz73edVYHC/ART-332J-Project-2--User-Personas---Journey-Maps?t=aDSxK1BxHDKU6Ips-1" target="_blank" rel="noopener noreferrer" aria-label="Open User Personas">
-                        <img src="assets/leader-persona.png" alt="Club leader persona outlining goals, needs, behaviors, and challenges in managing a student organization">
-                    </a>
-                    <figcaption>Club Leader Persona</figcaption>
-                </figure>
-                <figure class="project-visual-card">
-                    <a href="https://www.figma.com/design/JKqGbyrNG1QJvz73edVYHC/ART-332J-Project-2--User-Personas---Journey-Maps?node-id=2204-197&t=aDSxK1BxHDKU6Ips-1" target="_blank" rel="noopener noreferrer" aria-label="Open User Journey Maps">
-                        <img src="assets/student-journey.png" alt="Student journey map illustrating stages, emotions, touchpoints, and pain points when discovering and joining campus clubs">
-                    </a>
-                    <figcaption>Student Journey Map</figcaption>
-                </figure>
-                <figure class="project-visual-card">
-                    <a href="https://www.figma.com/design/JKqGbyrNG1QJvz73edVYHC/ART-332J-Project-2--User-Personas---Journey-Maps?node-id=2204-197&t=aDSxK1BxHDKU6Ips-1" target="_blank" rel="noopener noreferrer" aria-label="Open User Journey Maps">
-                        <img src="assets/leader-journey.png" alt="Club leader journey map showing stages, touchpoints, and pain points for recruiting and onboarding new members">
-                    </a>
-                    <figcaption>Club Leader Journey Map</figcaption>
-                </figure>
-                <figure class="project-visual-card">
-                    <img src="assets/explore.png" alt="Club Discovery explore screen showing student organizations before filters are applied">
-                    <figcaption>Prototype - Explore Screen</figcaption>
-                </figure>
-                <figure class="project-visual-card">
-                    <img src="assets/explore-filters-open.png" alt="Club Discovery explore screen with filters panel open showing category, school, and commitment options">
-                    <figcaption>Prototype - Filtering Workflow</figcaption>
-                </figure>
-                <figure class="project-visual-card">
-                    <img src="assets/club-profile.png" alt="Club profile page for WashU Second Serve showing mission, events, gallery, and contact information">
-                    <figcaption>Prototype - Club Profile Example</figcaption>
-                </figure>
+
+                <hr class="project-divider">
+
+                <h2 id="testing">Testing</h2>
+                <h3>Validating the solution through usability testing.</h3>
+
+                <p>To evaluate the user experience, I ran usability testing sessions with student participants.</p>
+
+                <div class="testing-grid">
+                    <div class="testing-card">
+                        <span class="testing-stat-rating"><span class="testing-stat-star">★</span>5.0<span class="testing-stat-rating-max">/5</span></span>
+                        <span class="testing-stat-time">20.5s</span>
+                        <h4>Task 1: Adding an Interest</h4>
+                        <p>Completed relatively smoothly, with minor confusion around clickable category headers.</p>
+                    </div>
+
+                    <div class="testing-card">
+                        <span class="testing-stat-rating"><span class="testing-stat-star">★</span>4.2<span class="testing-stat-rating-max">/5</span></span>
+                        <span class="testing-stat-time">48.0s</span>
+                        <h4>Task 2: Applying a Filter</h4>
+                        <p>Users struggled to see or find the filters and often clicked on the search bar instead.</p>
+                    </div>
+
+                    <div class="testing-card">
+                        <span class="testing-stat-rating"><span class="testing-stat-star">★</span>4.8<span class="testing-stat-rating-max">/5</span></span>
+                        <span class="testing-stat-time">14.25s</span>
+                        <h4>Task 3: Learning to Join a Club</h4>
+                        <p>No major challenges finding club info, but contrast and readability could be improved.</p>
+                    </div>
+                </div>
+
+                <hr class="project-divider">
+
+                <h2 id="next-steps">Next Steps</h2>
+                <h3>Refining the experience for implementation.</h3>
+
+                <p>Feedback from testing highlighted clear areas to polish as the design moves toward implementation:</p>
+
+                <div class="solution-feature">
+                    <p class="solution-feature-eyebrow">Priority 01 — Fix Usability Issues</p>
+                    <p class="solution-feature-body">Increase filter visibility, darken text contrast, and make interest categories clearer.</p>
+                </div>
+
+                <div class="solution-feature">
+                    <p class="solution-feature-eyebrow">Priority 02 — Expand Feature Scope</p>
+                    <p class="solution-feature-body">Build out messaging center, event pages, and the club executive admin dashboard.</p>
+                </div>
+
+                <div class="solution-feature solution-feature--flush">
+                    <p class="solution-feature-eyebrow">Priority 03 — Establish High-Fidelity Visual Identity</p>
+                    <p class="solution-feature-body">Integrate official WashU branding, color palettes, and typography for a cohesive visual identity.</p>
+                </div>
+            </div>
+
+            <section class="next-projects">
+                <div class="next-projects-wrap">
+                    <h2 id="see-next">Explore More</h2>
+                    <div class="next-projects-grid">
+                        <a class="card-link next-project-card" href="type.html">
+                            <img class="next-project-img" src="assets/thumbnails/type-cover.jpg" alt="The Evolution of Type website homepage">
+                            <div class="next-project-body">
+                                <h3 class="header">The Evolution of Type Website</h3>
+                                <p class="next-project-desc">A web project exploring 100 landmark typefaces</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </section>
+        </div>
         </div>
     </main>
 
@@ -173,12 +353,10 @@
             </div>
         </div>
         <div class="contents footer-bottom">
-            <p class="footer-copyright">&copy; 2026 Amber Edmonds</p>
+            <p class="footer-copyright">&copy; 2026 Amber Edmonds &middot; Built with Claude Code</p>
             <nav class="footer-nav" aria-label="Footer navigation">
-                <a href="index.html#home">Home</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#work">Work</a>
-                <a href="index.html#contact">Contact</a>
+            <a href="index.html#work">Work</a>
+            <a href="about.html">About</a>
             </nav>
         </div>
     </footer>

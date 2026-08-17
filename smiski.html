@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amber's Portfolio</title>
+    <title>Smiski Adventures Website | Amber Edmonds</title>
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,10 +27,8 @@
             <a class="top-nav-center" href="index.html#home">Amber Edmonds</a>
             <div class="top-nav-menu">
                 <nav class="top-nav-left">
-                    <a href="index.html#home">Home</a>
-                    <a href="index.html#about">About</a>
-                    <a class="selected" href="index.html#work">Work</a>
-                    <a href="index.html#contact">Contact</a>
+                <a href="index.html#work">Work</a>
+                <a href="about.html">About</a>
                 </nav>
             </div>
             <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation menu">
@@ -41,105 +39,118 @@
         </div>
     </header>
 
-    <main class="project-case-study">
-        <div class="project-case-wrap">
+    <main class="project-case-study project-case-study--light">
+        <div class="project-case-wrap project-case-wrap--stacked project-case-wrap--wide-left">
             <aside class="project-case-left">
-                <p class="project-case-kicker">Web + Interactive Design</p>
-                <h1>Smiski Website</h1>
-                <p class="project-case-intro">This project focused on bringing a playful digital concept to life through AI-assisted development, real-time API integrations, and an interactive web layout.</p>
-                
-                <div class="project-meta-grid">
-                    <article>
-                        <h3>When</h3>
-                        <p>May 2026</p>
-                    </article>
-                    <article>
-                        <h3>Role</h3>
-                        <p>Web Designer + Developer</p>
-                    </article>
-                    <article>
-                        <h3>Tools</h3>
-                        <p>HTML/CSS/JS, Codex AI</p>
-                    </article>
+                <nav class="project-breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html#archive">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                        <span class="project-breadcrumb-label">Other Projects</span>
+                    </a>
+                    <span>/</span>
+                    <span class="project-breadcrumb-current">Smiski Adventures Website</span>
+                </nav>
+
+                <div class="project-overview">
+                    <div class="project-overview-main">
+                        <p class="project-case-kicker">Creative Web Development</p>
+                        <h1>Smiski Adventures Website</h1>
+
+                        <p class="project-case-intro">For my Web Development class at WashU, I designed and built Smiski Adventures, an interactive digital dollhouse for product discovery. Pairing front-end design with Codex AI, I built a multi-room environment with seamless navigation, clickable character modals, and a sidebar to save favorite Smiskis across sessions. To make the world feel more immersive, real-time location and time APIs automatically shift the atmosphere between Day and Night modes based on when a user visits. This was a fun dive into rapid prototyping, AI-assisted coding, and playful micro-interactions.</p>
+
+                        <div class="project-cta-group">
+                            <a class="project-prototype-link project-prototype-link--primary" href="https://ambermedmonds.github.io/2026-spring-washu-cse2004/website-3/index.html" target="_blank" rel="noopener noreferrer">View Site</a>
+                        </div>
+                    </div>
+
+                    <div class="project-overview-side">
+                        <div class="project-meta-grid project-meta-grid--stacked">
+                            <article>
+                                <h3>Role</h3>
+                                <p>Web Designer + Developer</p>
+                            </article>
+                            <article>
+                                <h3>Timeline</h3>
+                                <p>May 2026 (1 week)</p>
+                            </article>
+                            <article>
+                                <h3>Tools</h3>
+                                <p>VS Code, Codex AI</p>
+                            </article>
+                        </div>
+
+                        <div class="project-skills">
+                            <h3>Skills</h3>
+                            <div class="tag-list">
+                                <span class="tag">Web Design</span>
+                                <span class="tag">Interaction Design</span>
+                                <span class="tag">HTML/CSS/JS</span>
+                                <span class="tag">API Integrations</span>
+                                <span class="tag">AI-Assisted Development</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="project-accordion-group">
-                    <details class="project-accordion">
-                        <summary>Objective</summary>
-                        <div class="project-accordion-content">
-                            <p>Design and build an original, dollhouse-style web application that gamifies product discovery through responsive room navigation and dynamic UI features.</p>
-                        </div>
-                    </details>
-
-                    <details class="project-accordion">
-                        <summary>Process</summary>
-                        <div class="project-accordion-content">
-                            <ul>
-                                <li>Defined an interactive concept and user flow</li>
-                                <li>Translated ideas into VS Code using Codex AI to rapidly prototype interactive hotspots API integrations</li>
-                                <li>Fine-tuned UI elements, color palettes, modal overlays, and room transitions for a cohesive site experience</li>
-                            </ul>
-                        </div>
-                    </details>
-
-                    <details class="project-accordion">
-                        <summary>Key Features</summary>
-                        <div class="project-accordion-content">
-                            <ul>
-                                <li>Fetches real-time location and time data to dynamically toggle between Day and Night themes</li>
-                                <li>Navigates seamlessly between rooms with arrow controls and quick jumps back to the main house layout</li>
-                                <li>Opens custom character modals when clicking interactive Smiskis in each room</li>
-                                <li>Saves and pins favorite Smiskis across different sessions in a dedicated sidebar</li>
-                            </ul>
-                        </div>
-                    </details>
-
-                    <details class="project-accordion">
-                        <summary>Outcome</summary>
-                        <div class="project-accordion-content">
-                            <p>Delivered a web app that combines creative vision, AI-assisted development, and real-time API integrations into a memorable product experience.</p>
-                        </div>
-                    </details>
-                </div>
-
-                <a class="project-prototype-link" href="https://ambermedmonds.github.io/2026-spring-washu-cse2004/website-3/index.html" target="_blank" rel="noopener noreferrer">View Live Website</a>
             </aside>
 
             <section class="project-case-right" aria-label="Smiski website visuals">
                 <figure class="project-visual-card">
-                    <a href="https://ambermedmonds.github.io/2026-spring-washu-cse2004/website-3/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open Smiski live website">
-                        <img src="assets/smiski-adventures.png" alt="Smiski Adventures landing page on a desktop monitor mockup with green and yellow branding">
-                    </a>
+                    <img src="assets/smiski/adventures.png" alt="Smiski Adventures landing page on a desktop monitor mockup with green and yellow branding">
                     <figcaption>Home Page</figcaption>
                 </figure>
                 <figure class="project-visual-card">
-                    <img src="assets/smiski-house.png" alt="3D layout of the interactive Smiski dollhouse showing clickable room hotspots">
+                    <img src="assets/smiski/house.png" alt="3D layout of the interactive Smiski dollhouse showing clickable room hotspots">
                     <figcaption>Interactive Smiski House</figcaption>
                 </figure>
                 <figure class="project-visual-card">
-                    <img src="assets/smiski-bedroom-day.png" alt="Bedroom in day mode featuring interactive Smiski figures placed around the room">
+                    <img src="assets/smiski/bedroom-day.png" alt="Bedroom in day mode featuring interactive Smiski figures placed around the room">
                     <figcaption>Bedroom (Day Mode)</figcaption>
                 </figure>
                 <figure class="project-visual-card">
-                    <img src="assets/smiski-bath-night.png" alt="Bathroom in night mode with dimmed lighting featuring interactive Smiski figures placed around the room">
+                    <img src="assets/smiski/bath-night.png" alt="Bathroom in night mode with dimmed lighting featuring interactive Smiski figures placed around the room">
                     <figcaption>Bathroom (Night Mode)</figcaption>
                 </figure>
                 <figure class="project-visual-card">
-                    <img src="assets/smiski-gym-day-select.png" alt="Gym in day mode displaying a detail modal for the Smiski Aerobics figure">
+                    <img src="assets/smiski/gym-day-select.png" alt="Gym in day mode displaying a detail modal for the Smiski Aerobics figure">
                     <figcaption>Gym with selected Smiski (Day Mode)</figcaption>
                 </figure>
                 <figure class="project-visual-card">
-                    <img src="assets/smiski-closet-night-select.png" alt="Closet in night mode showing an open modal for the Smiski Struggling character">
+                    <img src="assets/smiski/closet-night-select.png" alt="Closet in night mode showing an open modal for the Smiski Struggling character">
                     <figcaption>Closet with selected Smiski (Night Mode)</figcaption>
                 </figure>
                 <figure class="project-visual-card">
-                    <img src="assets/smiski-office-day-saved.png" alt="Office in day mode with an open sidebar displaying saved Smiski figures">
+                    <img src="assets/smiski/office-day-saved.png" alt="Office in day mode with an open sidebar displaying saved Smiski figures">
                     <figcaption>Office with saved Smiski sidebar (Day Mode)</figcaption>
                 </figure>
             </section>
         </div>
     </main>
 
+
+    <section class="next-projects">
+        <div class="next-projects-wrap">
+            <h2>Keep Exploring</h2>
+            <div class="next-projects-grid">
+                <a class="card-link next-project-card" href="nudo-website.html">
+                    <img class="next-project-img" src="assets/thumbnails/nudo-house-cover.jpg" alt="Nudo House restaurant website homepage mockup">
+                    <div class="next-project-body">
+                        <h3 class="header">Nudo House Website</h3>
+                        <p class="next-project-desc">A modern website redesign and front-end build for a local restaurant</p>
+                    </div>
+                </a>
+
+                <a class="card-link next-project-card" href="wten.html">
+                    <img class="next-project-img" src="assets/thumbnails/wten-cover.png" alt="WashU women's tennis social media graphic collection featuring match announcements, rankings, and player highlights">
+                    <div class="next-project-body">
+                        <h3 class="header">WashU Women's Tennis Instagram</h3>
+                        <p class="next-project-desc">Social media graphics featuring gamedays, results, rankings, and more</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <footer class="site-footer" id="contact">
         <div class="contents footer-contents">
@@ -158,12 +169,10 @@
             </div>
         </div>
         <div class="contents footer-bottom">
-            <p class="footer-copyright">&copy; 2026 Amber Edmonds</p>
+            <p class="footer-copyright">&copy; 2026 Amber Edmonds &middot; Built with Claude Code</p>
             <nav class="footer-nav" aria-label="Footer navigation">
-                <a href="index.html#home">Home</a>
-                <a href="index.html#about">About</a>
-                <a href="index.html#work">Work</a>
-                <a href="index.html#contact">Contact</a>
+            <a href="index.html#work">Work</a>
+            <a href="about.html">About</a>
             </nav>
         </div>
     </footer>
