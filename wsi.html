@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Williams-Sonoma: The Swatch Experience | Amber Edmonds</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <style>
+        body.page-locked > *:not(.password-gate):not(.cursor-dot):not(.cursor-trail-dot):not(.card-cursor) {
+            display: none !important;
+        }
+
+        .password-gate {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            background-color: var(--color-page, #ECEBEA);
+            font-family: "Be Vietnam Pro", sans-serif;
+        }
+
+        .password-gate[hidden] {
+            display: none;
+        }
+
+        .password-gate-card {
+            width: 100%;
+            max-width: 360px;
+            padding: 32px 28px;
+            border-radius: 16px;
+            background-color: #ffffff;
+            border: 1px solid var(--color-border, #d7d9df);
+            box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+            text-align: center;
+        }
+
+        .password-gate-card h1 {
+            font-family: "Be Vietnam Pro", sans-serif;
+            text-transform: none;
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+        }
+
+        .password-gate-card p {
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .password-gate-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+        }
+
+        .password-gate-input {
+            padding: 12px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--color-border, #d7d9df);
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .password-gate-submit {
+            margin: 10px 0;
+            padding: 12px 14px;
+            border-radius: 8px;
+            border: 0;
+            background-color: var(--color-accent, #4A7C59);
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .password-gate-error {
+            margin-top: 0;
+            margin-bottom: 0;
+            color: #b3261e;
+            font-size: 0.85rem;
+            min-height: 0;
+        }
+
+        .password-gate-error:empty {
+            display: none;
+        }
+    </style>
+</head>
+<body class="page-locked">
+
+    <div class="password-gate" id="password-gate">
+        <div class="password-gate-card">
+            <h1>This case study is private</h1>
+            <p>Enter the password to view the Williams-Sonoma case study.</p>
+            <form class="password-gate-form" id="password-gate-form">
+                <input class="password-gate-input" type="password" id="password-gate-input" placeholder="Password" autocomplete="off" autofocus>
+                <button class="password-gate-submit" type="submit">Unlock</button>
+                <p class="password-gate-error" id="password-gate-error"></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            var CORRECT_HASH = "8f3d3ed96cbd56fbd21823766243594045200ce05a22408b03f4e2a46ece12f7";
+            var STORAGE_KEY = "wsi-case-study-unlocked";
+
+            function sha256Hex(text) {
+                var data = new TextEncoder().encode(text);
+                return crypto.subtle.digest("SHA-256", data).then(function (buf) {
+                    return Array.from(new Uint8Array(buf))
+                        .map(function (b) { return b.toString(16).padStart(2, "0"); })
+                        .join("");
+                });
+            }
+
+            function unlock(remember) {
+                document.body.classList.remove("page-locked");
+                document.getElementById("password-gate").setAttribute("hidden", "");
+                window.dispatchEvent(new Event("resize"));
+                if (remember) {
+                    localStorage.setItem(STORAGE_KEY, "true");
+                }
+            }
+
+            if (localStorage.getItem(STORAGE_KEY) === "true") {
+                unlock(false);
+            }
+
+            document.getElementById("password-gate-form").addEventListener("submit", function (e) {
+                e.preventDefault();
+                var input = document.getElementById("password-gate-input");
+                var errorEl = document.getElementById("password-gate-error");
+                sha256Hex(input.value).then(function (hash) {
+                    if (hash === CORRECT_HASH) {
+                        unlock(true);
+                    } else {
+                        errorEl.textContent = "Incorrect password. Please try again.";
+                        input.value = "";
+                        input.focus();
+                    }
+                });
+            });
+        })();
+    </script>
+
+    <header>
+        <div class="top-nav">
+            <a class="top-nav-center" href="index.html#home">Amber Edmonds</a>
+            <div class="top-nav-menu">
+                <nav class="top-nav-left">
+                <a href="index.html#work">Work</a>
+                <a href="about.html">About</a>
+                </nav>
+            </div>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="project-case-study project-case-study--light">
+        <div class="project-case-wrap project-case-wrap--stacked project-case-wrap--with-toc">
+            <div class="project-toc-rail">
+                <nav class="project-toc" aria-label="Case study sections">
+                    <p class="project-toc-label">Contents</p>
+                    <a href="#context">Context</a>
+                    <a href="#research">Research</a>
+                    <a href="#recommendations">Recommendations</a>
+                    <a href="#next-steps">Next Steps</a>
+                    <a href="#reflection">Reflection</a>
+                    <a href="#see-next">Explore More</a>
+                </nav>
+            </div>
+
+            <div class="project-main">
+                <aside class="project-case-left">
+                    <nav class="project-breadcrumb" aria-label="Breadcrumb">
+                        <a href="index.html#work">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                            <span class="project-breadcrumb-label">Case Studies</span>
+                        </a>
+                        <span>/</span>
+                        <span class="project-breadcrumb-current">The Swatch Experience</span>
+                    </nav>
+
+                    <figure class="project-visual-card">
+                        <img src="assets/thumbnails/wsi-cover.jpg" alt="Williams-Sonoma, Inc. fabric swatch experience placeholder cover image">
+                    </figure>
+
+                    <div class="project-overview">
+                        <div class="project-overview-main">
+                            <p class="project-case-kicker">Product Strategy</p>
+                            <h1>The Swatch Experience</h1>
+
+                            <p class="project-case-intro">Fabric swatches help customers feel confident when purchasing furniture online, but the experience across Williams-Sonoma, Inc. brands lacked a clear path from exploring fabrics to taking the next step toward purchase. As a Tech PM Intern, I explored the end-to-end swatch journey to uncover customer friction and identify opportunities to create a more connected experience.</p>
+
+                            <div class="project-cta-group">
+                                <a class="project-prototype-link project-prototype-link--primary" href="https://www.figma.com/deck/G7GWEwBEVTDn58kgoauCgD/WSI-Intern-Project?node-id=13-540&t=i2TdanxtzInulWdD-1" target="_blank" rel="noopener noreferrer">View Slide Deck</a>
+                                <a class="project-prototype-link" href="#recommendations">Jump to Recommendations ↓</a>
+                            </div>
+                        </div>
+
+                        <div class="project-overview-side">
+                            <div class="project-meta-grid project-meta-grid--stacked">
+                                <article>
+                                    <h3>Role</h3>
+                                    <p>Tech PM Intern</p>
+                                </article>
+                                <article>
+                                    <h3>Timeline</h3>
+                                    <p>Jun - Aug 2025 <br>
+                                    (8 weeks)</p>
+                                </article>
+                                <article>
+                                    <h3>Tools</h3>
+                                    <p>Figma, FigJam</p>
+                                </article>
+                            </div>
+
+                            <div class="project-skills">
+                                <h3>Skills</h3>
+                                <div class="tag-list">
+                                    <span class="tag">Product Discovery</span>
+                                    <span class="tag">Customer Research</span>
+                                    <span class="tag">Competitive Analysis</span>
+                                    <span class="tag">Roadmap Prioritization</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+            <hr class="project-divider">
+
+            <div class="project-content">
+                <h2 id="context">Context</h2>
+                <h3>Swatches are a key moment in the purchase journey.</h3>
+
+                <p>When shopping for furniture, customers often order fabric swatches to see and feel materials before making a purchase. This touchpoint can influence confidence, conversion, and engagement with a Design Crew expert. My goal was to identify opportunities to improve the swatch experience across Williams-Sonoma, Inc. brands.</p>
+
+                <figure class="project-visual-card project-visual-card--framed">
+                    <img src="assets/wsi/context.jpg" alt="A diagram showing the friction points across the customer journey">
+                </figure>
+
+                <hr class="project-divider">
+
+                <h2 id="research">Research</h2>
+                <h3>Mapping the journey from browsing to post-swatch engagement.</h3>
+                <p>I talked with 45+ stakeholders across product, UX, engineering, retail, fulfillment, marketing, and creative to hear different perspectives on the swatch experience. These conversations also gave me access to internal research, customer data, and other resources that helped shape my analysis. Additionally, I conducted competitive audits by reviewing other websites and ordering swatches to evaluate the fulfillment and post-swatch experience firsthand. I synthesized my findings into three areas of friction: site experience, fulfillment, and e-marketing.</p>
+
+                <figure class="project-visual-card project-visual-card--framed">
+                    <img src="assets/wsi/friction-points.jpg" alt="A diagram showing the friction points across the customer journey">
+                </figure>
+
+                <p>I prioritized opportunities based on customer impact, feasibility, and timeline, focusing on high-impact wins that could realistically be explored within the project scope. Opportunities shown in gray were deprioritized due to technical complexity or reliance on external partners.</p>
+
+                <figure class="project-visual-card project-visual-card--framed">
+                    <img src="assets/wsi/potential-outcomes.jpg" alt="A diagram showing the potential outcomes of improving the swatch experience">
+                </figure>
+
+                <hr class="project-divider">
+
+                <h2 id="recommendations">Recommendations</h2>
+                <h3>Three opportunities to enhance the swatch experience.</h3>
+                
+                <div class="recommendation-grid">
+                    <div class="recommendation-card">
+                        <span class="recommendation-num next-steps-marker">01</span>
+                        <div class="recommendation-body">
+                            <h4>Help customers choose the right fabric.</h4>
+                            <p>Clarify unfamiliar fabric terms and help customers narrow options based on preferences and lifestyle.</p>
+                        </div>
+                        <div class="recommendation-img-grid">
+                            <div class="recommendation-img-crop"><img src="assets/wsi/wsi-educate.jpg" alt="Fabric education concept for helping customers choose the right fabric"></div>
+                            <div class="recommendation-img-crop"><img src="assets/wsi/wsi-advisor.jpg" alt="Fabric advisor concept for helping customers choose the right fabric"></div>
+                        </div>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <span class="recommendation-num next-steps-marker">02</span>
+                        <div class="recommendation-body">
+                            <h4>Elevate the swatch delivery experience.</h4>
+                            <p>Add a branded postcard with a QR code to connect the physical experience with Design Crew services.</p>
+                        </div>
+                        <img class="recommendation-img" src="assets/wsi/wsi-postcards.jpg" alt="Branded swatch postcard concept">
+                    </div>
+
+                    <div class="recommendation-card">
+                        <span class="recommendation-num next-steps-marker">03</span>
+                        <div class="recommendation-body">
+                            <h4>Keep customers engaged after delivery.</h4>
+                            <p>Use more targeted outreach to help customers take the next step and connect with a designer.</p>
+                        </div>
+                        <div class="recommendation-img-grid">
+                            <div class="recommendation-img-crop"><img src="assets/wsi/wsi-inbox.jpg" alt="Inbox concept for connecting customers with a designer"></div>
+                            <div class="recommendation-img-crop"><img src="assets/wsi/wsi-email.jpg" alt="Email outreach concept for connecting customers with a designer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="project-divider">
+
+                <h2 id="next-steps">Next Steps</h2>
+                <h3>Test the ideas, learn what works, and scale from there.</h3>
+
+                <div class="next-steps-timeline">
+                    <div class="next-steps-step">
+                        <div class="next-steps-marker">01</div>
+                        <div class="next-steps-card">
+                            <h4>Fabric education</h4>
+                            <p>Test different approaches to see which best helps customers understand and compare fabrics.</p>
+                        </div>
+                    </div>
+
+                    <div class="next-steps-step">
+                        <div class="next-steps-marker">02</div>
+                        <div class="next-steps-card">
+                            <h4>Swatch postcard</h4>
+                            <p>Pilot the postcard and measure QR engagement, Design Crew appointments, and ROI.</p>
+                        </div>
+                    </div>
+
+                    <div class="next-steps-step">
+                        <div class="next-steps-marker">03</div>
+                        <div class="next-steps-card">
+                            <h4>Designer outreach</h4>
+                            <p>Get feedback from designers and pilot a more structured clienteling workflow.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="project-divider">
+
+                <h2 id="reflection">Reflection</h2>
+                <h3>Turning ambiguity into an actionable product roadmap.</h3>
+                <p>This project taught me how to navigate an open-ended problem, balance customer impacts with feasibility, and turn research into clear product decisions. It strengthened how I approach ambiguity: understand the problem first, prioritize what matters most, and leave with actionable next steps.</p>
+            </div>
+
+            <section class="next-projects">
+                <div class="next-projects-wrap">
+                    <h2 id="see-next">Explore More</h2>
+                    <div class="next-projects-grid">
+                        <a class="card-link next-project-card" href="club-discovery.html">
+                            <img class="next-project-img" src="assets/thumbnails/platform-cover.jpg" alt="Club Discovery platform interface displayed on a laptop screen">
+                            <div class="next-project-body">
+                                <h3 class="header">WashU Club Discovery Platform</h3>
+                                <p class="next-project-desc">A prototype designed to improve club discovery</p>
+                            </div>
+                        </a>
+
+                        <a class="card-link next-project-card" href="type.html">
+                            <img class="next-project-img" src="assets/thumbnails/type-cover.jpg" alt="The Evolution of Type website homepage">
+                            <div class="next-project-body">
+                                <h3 class="header">The Evolution of Type Website</h3>
+                                <p class="next-project-desc">A web project exploring 100 landmark typefaces</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="contents footer-contents">
+            <h2 class="footer-heading">Let's Connect</h2>
+            <span class="footer-email">amber.edmonds922@gmail.com</span>
+            <div class="footer-social">
+                <a class="footer-social-btn" href="mailto:amber.edmonds922@gmail.com" aria-label="Email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+                <a class="footer-social-btn" href="https://www.linkedin.com/in/ambermedmonds/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a class="footer-social-btn" href="https://www.instagram.com/ambermedmonds/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div class="contents footer-bottom">
+            <p class="footer-copyright">&copy; 2026 Amber Edmonds &middot; Built with Claude Code</p>
+            <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="index.html#work">Work</a>
+            <a href="about.html">About</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
