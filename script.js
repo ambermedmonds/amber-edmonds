@@ -124,10 +124,11 @@ const typewriterPrefix = document.querySelector('.typewriter-prefix')
 if (typewriterWord) {
     const prefixText = typewriterPrefix ? typewriterPrefix.textContent : ''
     const sequence = [
-        { text: 'product designer.', final: false },
-        { text: 'visual storyteller.', final: false },
-        { text: 'creative developer.', final: false },
-        { text: 'content strategist.', final: false },
+        { text: 'product builder.', final: false },
+        { text: 'creative strategist.', final: false },
+        { text: 'visual designer.', final: false },
+        { text: 'brand marketer.', final: false },
+        { text: 'competitive athlete.', final: false },
         { text: 'Thanks for stopping by ☺', final: true },
     ]
     let entryIndex = 0
