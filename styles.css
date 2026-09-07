@@ -1677,7 +1677,8 @@ iframe {
 }
 
 .nda-blur:hover .nda-overlay,
-.nda-blur:focus-within .nda-overlay {
+.nda-blur:focus-within .nda-overlay,
+.nda-blur.nda-active .nda-overlay {
     opacity: 1;
     pointer-events: auto;
 }

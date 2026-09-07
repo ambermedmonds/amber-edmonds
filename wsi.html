@@ -160,6 +160,33 @@
         })();
     </script>
 
+    <script>
+        (function () {
+            document.addEventListener("DOMContentLoaded", function () {
+                var blurEls = document.querySelectorAll(".nda-blur");
+                blurEls.forEach(function (el) {
+                    el.addEventListener("click", function (e) {
+                        if (!el.classList.contains("nda-active")) {
+                            e.preventDefault();
+                            blurEls.forEach(function (other) {
+                                if (other !== el) other.classList.remove("nda-active");
+                            });
+                            el.classList.add("nda-active");
+                        }
+                    });
+                });
+
+                document.addEventListener("click", function (e) {
+                    blurEls.forEach(function (el) {
+                        if (!el.contains(e.target)) {
+                            el.classList.remove("nda-active");
+                        }
+                    });
+                });
+            });
+        })();
+    </script>
+
     <header>
         <div class="top-nav">
             <a class="top-nav-center" href="index.html#home">Amber Edmonds</a>
