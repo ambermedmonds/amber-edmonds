@@ -1648,6 +1648,46 @@ iframe {
     gap: 14px;
 }
 
+.nda-blur {
+    position: relative;
+}
+
+.recommendation-img-wrap {
+    grid-column: 1 / -1;
+    position: relative;
+    margin-top: 2px;
+}
+
+.nda-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 14px;
+    border-radius: inherit;
+    background: rgba(20, 20, 20, 0.55);
+    color: #ffffff;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+
+.nda-blur:hover .nda-overlay,
+.nda-blur:focus-within .nda-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.nda-overlay a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
 .project-prototype-link {
     display: inline-block;
     padding: 10px 18px;
@@ -2437,6 +2477,7 @@ iframe {
 }
 
 .recommendation-img {
+    display: block;
     grid-column: 1 / -1;
     width: 100%;
     height: auto;
@@ -2466,6 +2507,7 @@ iframe {
 }
 
 .recommendation-img-crop img {
+    display: block;
     width: 100%;
     height: calc(100% + 10px);
     margin-top: -10px;
