@@ -128,7 +128,6 @@ if (typewriterWord) {
         { text: 'creative strategist.', final: false },
         { text: 'visual designer.', final: false },
         { text: 'brand marketer.', final: false },
-        { text: 'competitive athlete.', final: false },
         { text: 'Thanks for stopping by ☺', final: true },
     ]
     let entryIndex = 0
